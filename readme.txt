@@ -42,12 +42,18 @@ Trello - narzędzie do planowania zadań w czasie
 5. Testy
 
 
-~~~	Wordpress login:	admin		~~~
-~~~	Wordpress pass:		haslomaslo	~~~
+~~~~~	Wordpress login:	admin		~~~~~
+~~~~~	Wordpress pass:		haslomaslo	~~~~~
+
+
+Unsplash    unsplash.com
+    email:		padokir915@top-email.org
+    login:		workon_grp3
+    pass:		haslomaslo
 
 
 The WordPress Codex			codex.wordpress.org
 The WordPress Blog			wordpress.org/news
 WordPress Planet			planet.wordpress.org
-WordPress Support Forums	wordpress.org/support/forums
-WordPress IRC Channel		codex.wordpress.org/IRC
+WordPress Support Forums	    wordpress.org/support/forums
+WordPress IRC Channel		    codex.wordpress.org/IRC
