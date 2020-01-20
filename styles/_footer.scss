@@ -1,0 +1,16 @@
+footer {
+    .little-nav {
+        list-style-type: none;
+        display: inline;
+        order:2;
+
+        a {
+            text-decoration: none;
+            color:white;
+            font-family:"Arial";
+            font-size: 14px;
+            display: inline;
+            margin: 5px;
+        }
+    }
+}
