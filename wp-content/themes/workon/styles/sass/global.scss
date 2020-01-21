@@ -2,9 +2,8 @@
 @import "container";
 @import "footer";
 @import "offer";
-@import "team";
-@import "contact";
-
+// @import "team";
+// @import "contact";
 
 body {
     background-color: black;
@@ -48,7 +47,6 @@ body {
             display: inline-block;
             padding: 10px;
             font-family: 'Pathway Gothic One', sans-serif;
-            text-align: center;
 
             a {
                 color: #25211E;
