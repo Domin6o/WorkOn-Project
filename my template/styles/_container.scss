@@ -1,0 +1,17 @@
+.container {
+
+    .img-thumbnail {
+        width: 300px;
+        margin: 10px;
+
+       
+    }
+
+  .img-thumbnail:hover{
+            opacity:0.5;
+            transition: 0.3s;
+            cursor: pointer;
+            
+        }
+
+}

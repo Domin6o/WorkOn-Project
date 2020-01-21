@@ -1,0 +1,13 @@
+.team-container{
+    
+    .team {
+
+        list-style-type: none;
+
+        & > img {
+            width: 200px;
+        }
+
+    }
+    
+}
