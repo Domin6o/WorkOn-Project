@@ -6,17 +6,13 @@
 	<ol class="carousel-indicators">
 		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="./images/cat.jpeg" class="d-block w-100" alt="...">
+			<img src="<?php echo IMAGES; ?>/cat.jpeg" class="d-block w-100" alt="...">
 		</div>
 		<div class="carousel-item">
-			<img src="./images/cat2.jpeg" class="d-block w-100" alt="...">
-		</div>
-		<div class="carousel-item">
-			<img src="./images/cat.jpeg" class="d-block w-100" alt="...">
+			<img src="<?php echo IMAGES; ?>/cat2.jpeg" class="d-block w-100" alt="...">
 		</div>
 	</div>
 	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -28,23 +24,47 @@
 		<span class="sr-only">Next</span>
 	</a>
 </div>
+
 <h1 class="m-2 d-flex justify-content-center">O nas</h1>
+
+
 <p class="m-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 <button type="button" class="btn btn-outline-dark m-5"><a href="./about-us.html">Read more</a></button>
+
 <h2 class="m-3 d-flex justify-content-center">Ostatnie realizacje</h2>
+
 <div class="container d-flex justify-content-center">
 	<img src="./images/sanfran.jpg" class="img-thumbnail" alt="Cinque Terre">
 	<img src="./images/sanfran.jpg" class="img-thumbnail" alt="Cinque Terre">
 	<img src="./images/sanfran.jpg" class="img-thumbnail" alt="Cinque Terre">
 </div>
+
 <div class="buttons d-flex justify-content-center">
 	<button type="button" id="first" class="btn btn-outline-dark m-5"><a href="./portfolio.html">See our portfolio</a></button>
 </div>
+
+
+<h1 class="m-2 d-flex justify-content-center">Kariera</h1>
+<p class="m-3">
+	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti et, provident exercitationem sapiente, voluptates recusandae qui beatae obcaecati, minima maiores explicabo ex ad eveniet ab rerum numquam corporis? Cum!
+	Obcaecati doloribus maxime accusantium inventore debitis, omnis optio? Atque delectus error recusandae fuga, ab unde consequuntur consectetur aliquid aspernatur, ex autem nobis provident. Deleniti minus qui, accusamus doloribus quae neque.
+</p>
+
+<button type="button" class="btn btn-outline-dark m-5"><a href="./career.html">Dołącz do nas</a></button>
+
+<h1 class="m-2 d-flex justify-content-center">Blog</h1>
+<p class="m-3">
+	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti et, provident exercitationem sapiente, voluptates recusandae qui beatae obcaecati, minima maiores explicabo ex ad eveniet ab rerum numquam corporis? Cum!
+	Obcaecati doloribus maxime accusantium inventore debitis, omnis optio? Atque delectus error recusandae fuga, ab unde consequuntur consectetur aliquid aspernatur, ex autem nobis provident. Deleniti minus qui, accusamus doloribus quae neque.
+</p>
+
+<button type="button" class="btn btn-outline-dark m-5"><a href="./blog.html">Zobacz więcej</a></button>
 
 <?php
     get_footer();

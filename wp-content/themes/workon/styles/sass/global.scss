@@ -2,14 +2,17 @@
 @import "container";
 @import "footer";
 @import "offer";
+@import "team";
+@import "contact";
 
 
 body {
     background-color: black;
 
- i {
+    i {
         color: white;
         opacity: 0.4;
+        font-size: 20px;
 
         &:hover {
             color: yellow;
@@ -17,12 +20,10 @@ body {
         }
     }
 
-
     p {
         color: white;
         opacity: 0.3;
         font-family: 'Arial', sans-serif;
-        
     }
     
     h1 {
@@ -48,38 +49,21 @@ body {
             padding: 10px;
             font-family: 'Pathway Gothic One', sans-serif;
             text-align: center;
-    
-    
+
             a {
                 color: #25211E;
                 text-decoration: none;
             }
-    
         }
-        
     }
     
     .carousel-inner {
-
         width: 800px;
         height: 800px;
-
     }
 
-button a {
-    text-decoration: none;
-        
+    button a {
+        text-decoration: none;
+    }
 
 }
-
-
-}
-
-
-
-
-
-
-   
-
-   
