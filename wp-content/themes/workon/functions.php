@@ -17,3 +17,10 @@
     }
 
     add_action("wp_enqueue_scripts", "theme_scripts");
+    
+    //add menu
+    function register_menu() {
+        register_nav_menu("main-menu", "Main Menu");
+    }
+
+    add_action("init", "register_menu");
