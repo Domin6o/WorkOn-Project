@@ -25,6 +25,7 @@
     
     //add menu
     function register_menu() {
-        register_nav_menu("main-menu", "Main Menu");
+        register_nav_menu("header-nav-menu", "Header Nav Menu");
+        register_nav_menu("footer-nav-menu", "Footer Nav Menu");
     }
     add_action("init", "register_menu");
