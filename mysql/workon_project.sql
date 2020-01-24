@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 24 Sty 2020, 11:54
+-- Czas generowania: 24 Sty 2020, 13:07
 -- Wersja serwera: 10.4.11-MariaDB
 -- Wersja PHP: 7.4.1
 
@@ -209,7 +209,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (101, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (102, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (103, 'sidebars_widgets', 'a:2:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(104, 'cron', 'a:6:{i:1579865899;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1579901899;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1579945098;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1579946678;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1579946680;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(104, 'cron', 'a:6:{i:1579869499;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1579901899;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1579945098;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1579946678;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1579946680;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (105, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -237,7 +237,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (175, '_site_transient_browser_09f454857cbf37627aacee60db0bd6fc', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"79.0.3945.117\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (231, '_site_transient_timeout_php_check_12edeb5890095749089987982a1404ce', '1580456909', 'no'),
 (232, '_site_transient_php_check_12edeb5890095749089987982a1404ce', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
-(233, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1579901424', 'no'),
+(233, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1579908713', 'no'),
 (234, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:3:{s:9:\"sandboxed\";b:0;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:2:{i:0;a:8:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:49:\"WordUp Lublin 2020 #1 (Spotkajmy się, po prostu)\";s:3:\"url\";s:64:\"https://www.meetup.com/Lublin-WordPress-Meetup/events/268149387/\";s:6:\"meetup\";s:23:\"Lublin WordPress Meetup\";s:10:\"meetup_url\";s:47:\"https://www.meetup.com/Lublin-WordPress-Meetup/\";s:4:\"date\";s:19:\"2020-01-28 18:00:00\";s:8:\"end_date\";s:19:\"2020-01-28 20:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:14:\"Lublin, Poland\";s:7:\"country\";s:2:\"pl\";s:8:\"latitude\";d:51.248081207275;s:9:\"longitude\";d:22.567535400391;}}i:1;a:8:{s:4:\"type\";s:8:\"wordcamp\";s:5:\"title\";s:26:\"WordCamp Košice, Slovakia\";s:3:\"url\";s:33:\"https://2020.kosice.wordcamp.org/\";s:6:\"meetup\";N;s:10:\"meetup_url\";N;s:4:\"date\";s:19:\"2020-05-16 00:00:00\";s:8:\"end_date\";s:19:\"2020-05-16 00:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:17:\"Košice, Slovakia\";s:7:\"country\";s:2:\"SK\";s:8:\"latitude\";d:48.7139993;s:9:\"longitude\";d:21.2564904;}}}}', 'no'),
 (235, '_transient_timeout_feed_a2a8f6ff8f129a81518b9f747f983e41', '1579895311', 'no');
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -480,7 +480,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (195, 16, '_wp_trash_meta_status', 'publish'),
 (196, 16, '_wp_trash_meta_time', '1579524808'),
 (197, 16, '_wp_desired_post_slug', 'home'),
-(198, 42, '_edit_lock', '1579524690:1'),
+(198, 42, '_edit_lock', '1579865367:1'),
 (199, 44, '_menu_item_type', 'custom'),
 (200, 44, '_menu_item_menu_item_parent', '0'),
 (201, 44, '_menu_item_object_id', '44'),
@@ -594,7 +594,9 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (350, 151, '_edit_lock', '1579857927:1'),
 (351, 152, '_wp_attached_file', '2020/01/cat_face5-1.png'),
 (352, 152, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:820;s:6:\"height\";i:512;s:4:\"file\";s:23:\"2020/01/cat_face5-1.png\";s:5:\"sizes\";a:3:{s:6:\"medium\";a:4:{s:4:\"file\";s:23:\"cat_face5-1-300x187.png\";s:5:\"width\";i:300;s:6:\"height\";i:187;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:23:\"cat_face5-1-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:23:\"cat_face5-1-768x480.png\";s:5:\"width\";i:768;s:6:\"height\";i:480;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
-(353, 151, '_thumbnail_id', '152');
+(353, 151, '_thumbnail_id', '152'),
+(354, 42, '_edit_last', '1'),
+(355, 42, '_wp_page_template', 'page_portfolio.php');
 
 -- --------------------------------------------------------
 
@@ -674,7 +676,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (39, 1, '2020-01-20 13:53:12', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2020-01-20 13:53:12', '0000-00-00 00:00:00', '', 0, 'http://localhost/WorkOn_Project/?p=39', 1, 'nav_menu_item', '', 0),
 (40, 1, '2020-01-20 13:53:12', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2020-01-20 13:53:12', '0000-00-00 00:00:00', '', 0, 'http://localhost/WorkOn_Project/?p=40', 1, 'nav_menu_item', '', 0),
 (41, 1, '2020-01-20 13:53:12', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2020-01-20 13:53:12', '0000-00-00 00:00:00', '', 0, 'http://localhost/WorkOn_Project/?p=41', 1, 'nav_menu_item', '', 0),
-(42, 1, '2020-01-20 13:53:52', '2020-01-20 12:53:52', '', 'Portfolio', '', 'publish', 'closed', 'closed', '', 'portfolio', '', '', '2020-01-20 13:53:52', '2020-01-20 12:53:52', '', 0, 'http://localhost/WorkOn_Project/?page_id=42', 0, 'page', '', 0),
+(42, 1, '2020-01-20 13:53:52', '2020-01-20 12:53:52', '', 'Portfolio', '', 'publish', 'closed', 'closed', '', 'portfolio', '', '', '2020-01-24 12:31:48', '2020-01-24 11:31:48', '', 0, 'http://localhost/WorkOn_Project/?page_id=42', 0, 'page', '', 0),
 (43, 1, '2020-01-20 13:53:52', '2020-01-20 12:53:52', '', 'Portfolio', '', 'inherit', 'closed', 'closed', '', '42-revision-v1', '', '', '2020-01-20 13:53:52', '2020-01-20 12:53:52', '', 42, 'http://localhost/WorkOn_Project/2020/01/20/42-revision-v1/', 0, 'revision', '', 0),
 (44, 1, '2020-01-20 13:54:36', '2020-01-20 12:54:36', '', 'Strona główna', '', 'publish', 'closed', 'closed', '', 'strona-glowna', '', '', '2020-01-20 13:55:19', '2020-01-20 12:55:19', '', 0, 'http://localhost/WorkOn_Project/?p=44', 1, 'nav_menu_item', '', 0),
 (45, 1, '2020-01-20 13:54:36', '2020-01-20 12:54:36', ' ', '', '', 'publish', 'closed', 'closed', '', '45', '', '', '2020-01-20 13:55:19', '2020-01-20 12:55:19', '', 0, 'http://localhost/WorkOn_Project/?p=45', 2, 'nav_menu_item', '', 0),
@@ -1060,13 +1062,13 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT dla tabeli `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=269;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=270;
 
 --
 -- AUTO_INCREMENT dla tabeli `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=354;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=356;
 
 --
 -- AUTO_INCREMENT dla tabeli `wp_posts`
