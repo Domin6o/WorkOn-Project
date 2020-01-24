@@ -7,7 +7,7 @@
     <title> <?php bloginfo("nazwa"); wp_title(" | "); ?> </title>
 
     <?php wp_head(); ?> <!-- dodanie styli na podstawie functions.php -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
 
@@ -19,7 +19,8 @@
             wp_nav_menu([
                 "theme_location" => "header-nav-menu",
                 "container" => "ul",
-                "menu_class" => "list-inline"
+                "menu_class" => "list-inline",
+                "item_spacing" => "|"
             ]); 
         ?>
 		<!-- <ul>

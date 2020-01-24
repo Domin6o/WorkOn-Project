@@ -1,5 +1,4 @@
 <footer class="justify-content-space-between m-3">
-	
     <div class="media">
         <ul class="social-media">
             <li><h2 class="m-2 d-flex justify-content-start">Follow us</h2></li>
@@ -36,6 +35,7 @@
     </div>
 
     <p class="d-flex justify-content-center">&copy CAT 2020</p>
+    <p class="d-flex justify-content-center">A<i class="fas fa-camera"></i>A</p>
 
     <?php wp_footer(); ?> <!-- dodanie skryptów na podstawie functions.php -->
 
