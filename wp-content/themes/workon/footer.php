@@ -21,17 +21,6 @@
                 "menu_class" => "little-nav"
             ]); 
         ?>
-        <!-- <ul class="little-nav m-3 d-flex justify-content-center">
-			<li><a href="./index.html">Start</a></li>
-			<li><a href="./about-us.html">About us</a></li>
-			<li><a href="./offer.html">Offer</a></li>
-			<li><a href="./team.html">Team</a></li>
-			<li><a href="./portfolio.html">Portfolio</a></li>
-			<li><a href="./blog.html">Blog</a></li>
-			<li><a href="./contact.html">Contact</a></li>
-			<li><a href="./career.html">Career</a></li>
-			<li><a href="./privacy">Privacy</a></li>
-        </ul> -->
     </div>
 
     <p class="d-flex justify-content-center">&copy CAT 2020</p>
