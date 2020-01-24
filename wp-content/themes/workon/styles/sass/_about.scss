@@ -1,0 +1,29 @@
+.team {
+
+
+    display: flex;
+
+    &:nth-child(odd) {
+        flex-direction: row; 
+    }
+
+
+    & :nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+        margin-left: 290px;
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+
+    
+} 
+.team_list {
+    list-style: none;
+}
+
+

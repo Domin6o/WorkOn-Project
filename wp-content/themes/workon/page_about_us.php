@@ -2,10 +2,10 @@
     /* Template Name: About Us */
     
     $team_items = new WP_Query(array(
-        "post_type" => "team",
+        "post_type" => "about",
         "posts_per_page" => -1,
-        "order" => "DESC",
-        "orderby" => "title",
+        // "order" => "DESC",
+        // "orderby" => "title",
     ));    
     
     get_header();
@@ -30,92 +30,28 @@
       <h1 class="mt-5 d-flex justify-content-center">Nasz zespół</h1>
 
 <div class="mt-4 team-container d-flex">
-    <ul>
-        <?php if ($team_items->have_post()) : while ($team_items->have_posts()) :
-        $team_items->the_post() ?>
-        <li class="team d-flex">
-            <figure class="figure">
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="figure-img img-thumbnail img-fluid rounded 
-                d-start" alt="<?php the_title(); ?>">
-                <h4>Zdzisław Sikorka</h4>
-            </figure>
-            <div class="text m-2">
-                <h4>Stanowisko: Strategy & Marketing Specialist</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-        </li>
-        <?php endwhile; ?>
-        <?php else : ?>
-            <p class="text-muted text-center my-5">Brak wpisów</p>
-        <?php endif; ?>
-        <li class="team d-flex mt-2">
-            <div class="text m-2">
-                <h4>Stanowisko: SEO/ SEM Manager</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-            <div>
-                <img class="mx-4" src="images/sanfran.jpg" alt="">
-                <h4>Malwina Nikodemska</h4>
-            </div>
-        </li>
-        <li class="team d-flex mt-2">
-            <div>
-                <img src="images/sanfran.jpg" alt="">
-                <h4>Marek Miodkiewicz</h4>
-            </div>
-            <div class="text m-2">
-                <h4>Stanowisko: Senior Front-End Web Developer</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-        </li>
-        <li class="team d-flex mt-2">
-            <div class="text m-2">
-                <h4>Stanowisko: Marketing & Commercial Specialist</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-            <div>
-                <img class="mx-4" src="images/sanfran.jpg" alt="">
-                <h4>Leopold Górecki</h4>
-            </div>
-        </li>
-        <li class="team d-flex mt-2">
-            <div>
-                <img src="images/sanfran.jpg" alt="">
-                <h4>Olga Matysiak</h4>
-            </div>
-            <div class="text m-2">
-                <h4>Stanowisko: PR Specialist</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-        </li>
-        <li class="team d-flex mt-2">
-            <div class="text m-2">
-                <h4>Stanowisko: Art Designer</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-            <div>
-                <img class="mx-4" src="images/sanfran.jpg" alt="">
-                <h4>Lorem Ipsum</h4>
-            </div>
-        </li>
+    <ul class="team_list">
+        <?php if ($team_items->have_posts()) : while ($team_items->have_posts()) : $team_items->the_post() ?>
+          <li>    
+            <div class="team row mt-5">
+                    <div class="col-lg-4 mb-3 mb-lg-0">
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="img-fluid img-thumbnail"></a>
+                    </div>
+                    <div class="col-lg-6">
+                    <h2><?php the_title(); ?></h2>
+
+                      
+                        <?php the_content(); ?>
+
+                    </div>
+                </div>
+                </li>
+            <?php endwhile; ?>
+                <div class="pt-5 text-center"><p><?php posts_nav_link(); ?></p></div>
+            <?php else : ?>    
+                <p class="text-muted text-center my-5">Brak wyników</p>
+            <?php endif; ?>
+      
     </ul>
 
 
@@ -123,10 +59,10 @@
 
 <div class="buttons d-flex justify-content-center">
 
-    <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="./portfolio.html">See
-            portfolio</a></button>
-    <button type="button" id="second" class="btn btn-outline-dark m-5"> <a href="./contact.html">Contact
-            us</a></button>
+    <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="./page_portfolio.php">Zobacz
+            Portfolio</a></button>
+    <button type="button" id="second" class="btn btn-outline-dark m-5"> <a href="./page_contact.php">Skontaktuj się z Nami
+            </a></button>
 </div>
   
   

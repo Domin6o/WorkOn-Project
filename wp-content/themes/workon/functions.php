@@ -65,6 +65,17 @@
         );
         register_post_type( 'portfolio', $portfolio_args );
 
+        $team_args = array(
+            'label'               => 'About',
+            'labels'              => array('name' => 'About', 'menu_name' => 'About'),
+            'supports'            => array( 'title', 'thumbnail', 'editor' ),
+            'public'              => true,
+            'exclude_from_search' => false,
+            'menu_icon'           => 'dashicons-admin-post'
+        );
+
+        register_post_type( 'about', $team_args );
+
         // >>> add more here <<<
     }
     add_action("init", "add_custom_post_types", 0);
