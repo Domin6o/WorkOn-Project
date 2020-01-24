@@ -15,7 +15,7 @@
   list-style-type: none;
   display: inline-block;
   padding: 5px;
-  font-size: 40px;
+  font-size: 20px;
   margin: 2px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -60,6 +60,21 @@ footer .little-nav a {
   height: 100px;
 }
 
+.team-container .team {
+  list-style-type: none;
+}
+
+.team-container .team > img {
+  width: 200px;
+}
+
+.container-contact {
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 40px;
+}
+
 body {
   background-color: black;
 }
@@ -67,6 +82,7 @@ body {
 body i {
   color: white;
   opacity: 0.4;
+  font-size: 20px;
 }
 
 body i:hover {
