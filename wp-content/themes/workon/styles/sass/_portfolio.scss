@@ -1,23 +1,31 @@
 .filter-list {
-    list-style-type: none;
-    display: flex;
-    text-align: center;
+    padding: 10px 0;
+    background-color: $mygrey;
 
-    li {
-        display: inline-block;
-        padding: 20px;
-        margin: 0 10px;
-        background-color: white;
-        border-radius: 10%;
+    ul {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+    
+        li {
+            margin-right: 10px;
+    
+            a {
+                display: block;
+                min-width: 100px;
+                padding: 10px 20px;
+                border-radius: 100vw;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                color: $mygrey;
+                background-color: $mywhite;
 
-        a {
-            text-decoration: none;
-            color:black;
-            font-family:"Arial";
-            font-size: 14px;
-            font-weight: bold;
-            display: inline;
-            margin: 5px;
+                &:hover {
+                    color: $mygrey;
+                    background-color: $myblue;
+                }
+            }
         }
     }
 }
