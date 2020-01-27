@@ -12,7 +12,7 @@
 
 <body>
 
-<header>
+<header class="mb-3">
     <nav class="nav-menu d-flex justify-content-end">
         <?php
             wp_nav_menu([

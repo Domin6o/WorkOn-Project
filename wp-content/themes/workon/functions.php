@@ -76,6 +76,27 @@
 
         register_post_type( 'about', $team_args );
 
+        $offer_args = array(
+            'label'               => 'Offer',
+            'labels'              => array('name' => 'Offer', 'menu_name' => 'Offer'),
+            'supports'            => array( 'title', 'thumbnail', 'editor' ),
+            'public'              => true,
+            'exclude_from_search' => false,
+            'menu_position'       => 20,
+            'menu_icon'           => 'dashicons-admin-post',
+           
+        );
+
+        register_post_type( 'offer', $offer_args );
+
         // >>> add more here <<<
     }
     add_action("init", "add_custom_post_types", 0);
+
+    //Strona oferta
+
+    // $offer_items = new WP_Query(array(
+    //     "post_type" => "offer",
+    //     "posts_per_page" => -1,
+    
+    // ));
