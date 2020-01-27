@@ -2,7 +2,7 @@
 @import "container";
 @import "footer";
 @import "offer";
-@import "about"; 
+@import "about";
 // @import "team";
 // @import "contact";
 
@@ -25,14 +25,14 @@ body {
         opacity: 0.3;
         font-family: 'Arial', sans-serif;
     }
-    
+
     h1 {
         color: white;
         font-family: "Arial";
     }
-    
+
     .nav-menu {
-    
+
         list-style: none;
         font-size: 18px;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -42,7 +42,7 @@ body {
         min-width: 100%;
         padding: 10px;
         text-align: center;
-    
+
         li {
             display: inline-block;
             padding: 10px;
@@ -54,14 +54,33 @@ body {
             }
         }
     }
-    
+
     .carousel-inner {
         width: 800px;
         height: 800px;
     }
 
-    button a {
+    button {
         text-decoration: none;
     }
 
+<<<<<<< Updated upstream
+    .buttons {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .btn {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
 }
+=======
+
+}
+>>>>>>> Stashed changes

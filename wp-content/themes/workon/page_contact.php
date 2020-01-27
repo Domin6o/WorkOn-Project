@@ -42,7 +42,7 @@
                     <textarea class="form-control form-control-lg" id="usermessage" placeholder="Podaj treść"
                         rows="6" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-block btn-outline-dark btn-lg">Wyślij</button>
+                <button type="submit" class="btn btn-block btn-dark btn-lg">Wyślij</button>
             </form> -->
         </div>
     </div>
