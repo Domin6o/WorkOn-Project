@@ -22,6 +22,11 @@
                 "item_spacing" => "|"
             ]); 
         ?>
+        
+         <form id="search" action="<?php echo get_home_url("http://localhost/WorkOn_Project/?page_id=229"); ?>">
+            <input type="text" name="s" id="s" class="form-control" placeholder="Wyszukaj">
+        </form>
+
     </nav>
 </header>
 

@@ -1,6 +1,13 @@
 <?php 
 /* Template Name: Start */
 
+$portfolio_items = new WP_Query(array(
+	"post_type" => "portfolio",
+	"posts_per_page" => -1,
+	"order" => "DESC",
+	"orderby" => "title",
+));
+
 get_header(); ?>
 
 
@@ -44,12 +51,23 @@ get_header(); ?>
 <button type="button" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=9">Czytaj więcej</a></button>
 
 <h2 class="m-3 d-flex justify-content-center">Ostatnie realizacje</h2>
+<div class="container d-flex justify-content-center"
+        <?php if ($portfolio_items->have_posts()) : while ($portfolio_items->have_posts()) : $portfolio_items->the_post() ?>>
+            <figure class="figure">
+                <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="figure-img img-thumbnail" alt="<?php the_title(); ?>">
+                <figcaption class="figure-caption"><?php the_title(); ?></figcaption>
+            </figure>
+        <?php endwhile; ?>
+        <?php else : ?>    
+            <p class="text-muted text-center my-5">Nie znaleziono realizacji</p>
+        <?php endif; ?>
+    </div>
 
-<div class="container d-flex justify-content-center">
+<!-- <div class="container d-flex justify-content-center">
 	<img src="./images/sanfran.jpg" class="img-thumbnail" alt="Cinque Terre">
 	<img src="./images/sanfran.jpg" class="img-thumbnail" alt="Cinque Terre">
 	<img src="./images/sanfran.jpg" class="img-thumbnail" alt="Cinque Terre">
-</div>
+</div> -->
 
 <!-- Przyciski -->
 <div class="buttons d-flex justify-content-center">
@@ -61,26 +79,5 @@ get_header(); ?>
 
 
   </div>
-
-<!-- <div class="buttons d-flex justify-content-center">
-	<button type="button" id="first" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=42">See our portfolio</a></button>
-</div> -->
-
-
-<!-- <h1 class="m-2 d-flex justify-content-center">Kariera</h1>
-<p class="m-3">
-	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti et, provident exercitationem sapiente, voluptates recusandae qui beatae obcaecati, minima maiores explicabo ex ad eveniet ab rerum numquam corporis? Cum!
-	Obcaecati doloribus maxime accusantium inventore debitis, omnis optio? Atque delectus error recusandae fuga, ab unde consequuntur consectetur aliquid aspernatur, ex autem nobis provident. Deleniti minus qui, accusamus doloribus quae neque.
-</p>
-
-<button type="button" class="btn btn-outline-dark m-5"><a href="./career.html">Dołącz do nas</a></button>
-
-<h1 class="m-2 d-flex justify-content-center">Blog</h1>
-<p class="m-3">
-	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti et, provident exercitationem sapiente, voluptates recusandae qui beatae obcaecati, minima maiores explicabo ex ad eveniet ab rerum numquam corporis? Cum!
-	Obcaecati doloribus maxime accusantium inventore debitis, omnis optio? Atque delectus error recusandae fuga, ab unde consequuntur consectetur aliquid aspernatur, ex autem nobis provident. Deleniti minus qui, accusamus doloribus quae neque.
-</p>
-
-<button type="button" class="btn btn-outline-dark m-5"><a href="./blog.html">Zobacz więcej</a></button> -->
 
 <?php get_footer(); ?>

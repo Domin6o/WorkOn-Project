@@ -106,10 +106,4 @@
     }
     add_action("init", "add_custom_post_types", 0);
 
-    //Strona oferta
-
-    // $offer_items = new WP_Query(array(
-    //     "post_type" => "offer",
-    //     "posts_per_page" => -1,
     
-    // ));

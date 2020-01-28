@@ -24,7 +24,7 @@
     </div>
 
     <p class="d-flex justify-content-center">&copy CAT 2020</p>
-    <p class="d-flex justify-content-center">A<i class="fas fa-camera"></i>A</p>
+    <!-- <p class="d-flex justify-content-center">A<i class="fas fa-camera"></i>A</p> -->
 
     <?php wp_footer(); ?> <!-- dodanie skryptów na podstawie functions.php -->
 

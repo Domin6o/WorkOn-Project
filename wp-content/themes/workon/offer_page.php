@@ -9,27 +9,27 @@
     get_header();   
 ?>
 
-<div class="offer-container container d-flex m-6">
+<div class="offer-container container d-flex">
     <div class="row">
     <!-- Okreslenie pętli -->
 
     <?php if ($offer_items->have_posts()) : while ($offer_items->have_posts()) :
         $offer_items->the_post() ?>
         
-        <div class="col-4">
+        <div class="col-3 p-2 mx-4">
 
         <!-- Ikonki -->
 
-         <a class="m-5" href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>">
+         <a class="m-2" href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>">
       
       
          <!-- Pojawienie się tytułu wpisów -->
 
-         <a href="<?php the_permalink(); ?>"><h2 class="m-3"><?php the_title(); ?></h2></a>
+         <a href="<?php the_permalink(); ?>"><h2 class="m-2"><?php the_title(); ?></h2></a>
 
 <!-- Treść wpisów z wordpressa -->
 
-          <p class="m-3"> 
+          <p class="m"> 
 
         <?php the_content(); ?>
 
