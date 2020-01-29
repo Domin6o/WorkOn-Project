@@ -8,11 +8,12 @@
 
 body {
     background-color: #0F0C0C;
+    background: linear-gradient(50deg, #0F0C0C, black, #0D0E11, black, #0F0C0C, black, #0D0E11, black);
 
     i {
         color: white;
         opacity: 0.4;
-        font-size: 20px;
+        font-size: 0.6em;
 
         &:hover {
             color: yellow;
@@ -21,10 +22,12 @@ body {
     }
 
     p {
-        color: #C7C9B9;
-        font-size: 1.2em;
+        font: 1em/1.2em 'Roboto', Helvetica, sans-serif, #FFF8F4;
+        opacity: 0.7;
+        // color: #FFF8F4;
+        // font-size: 1em;
         // opacity: 0.7;
-        font-family: 'Caveat', cursive;
+        // font-family: 'Roboto', sans-serif;
     }
 
     h1 {
@@ -34,7 +37,7 @@ body {
 
     div {
         color: #C7C9B9;
-        font-family: 'Caveat', cursive;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.1em;
     }
 
@@ -43,7 +46,7 @@ body {
         list-style: none;
         font-size: 1.2em;
         font-family: 'Pathway Gothic One', sans-serif;
-        background-color: #E6E1DD;
+        background-color: #F9C002;
         top: 0;
         left: 0;
         min-width: 100%;
@@ -83,16 +86,12 @@ body {
     .btn {
         a {
             text-decoration: none;
+            font-family: 'Caveat', cursive;
             padding: 20px;
             color: #C7C9B9;
         }
         &:hover a{
-            color: darkblue;
+            color: #F9C002;
         }
     }
-<<<<<<< Updated upstream
-=======
-
-  
->>>>>>> Stashed changes
 }

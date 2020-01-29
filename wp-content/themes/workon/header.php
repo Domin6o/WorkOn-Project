@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="web design, kampanie reklamowe, e-marketing, szkolenia">
     <title> <?php bloginfo("nazwa"); wp_title(" | "); ?> </title>
 
     <?php wp_head(); ?> <!-- dodanie styli na podstawie functions.php -->
@@ -12,7 +13,7 @@
 
 <body>
 
-<header class="mb-3">
+<header class="mb-2">
     <nav class="nav-menu d-flex justify-content-end">
         <?php
             wp_nav_menu([

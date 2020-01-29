@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center m-3" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center my-3 mx-0" data-ride="carousel">
 	<ol class="carousel-indicators">
 		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 	</ol>
-	<div class="carousel-inner">
+	<div class="carousel-inner w-100">
 		<div class="carousel-item active">
 			<img src="<?php echo IMAGES; ?>/cat.jpeg" class="d-block w-100" alt="...">
 		</div>

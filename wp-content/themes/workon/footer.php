@@ -1,7 +1,7 @@
 <footer class="justify-content-space-between m-3">
     <div class="media">
         <ul class="social-media">
-            <li><h4 class="m-2 d-flex justify-content-start">Obserwuj nas:</h4></li>
+            <li><h6 class="m-2 d-flex justify-content-start">Obserwuj nas:</h6></li>
             <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
             <li><a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a></li>
