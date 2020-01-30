@@ -1,8 +1,7 @@
 <?php
-/* Template Name: 404 page */ 
 
  get_header(); ?>
 
+sadfghjkujhgfdsffgd
 
-
-<?php get_footer(); ?>
+<?php get_footer();

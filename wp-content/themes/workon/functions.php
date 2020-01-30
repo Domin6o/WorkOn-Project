@@ -106,4 +106,8 @@
     }
     add_action("init", "add_custom_post_types", 0);
 
+
+    //stop Wordpress from rewriting .htaccess file
+    add_filter( 'flush_rewrite_rules_hard', '__return_false' );
+
     

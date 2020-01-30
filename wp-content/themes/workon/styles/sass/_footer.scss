@@ -1,9 +1,13 @@
 footer {
+    color: white;
+    font-family: 'Roboto';
+
     .little-nav {
         list-style-type: none;
         display: flex;
         order:2;
         text-align: center;
+        font-family: 'Roboto';
 
         li {
             display: inline-block;
@@ -12,11 +16,17 @@ footer {
             a {
                 text-decoration: none;
                 color:white;
-                font-family:"Arial";
                 font-size: 14px;
                 display: inline;
                 margin: 5px;
+
+                &:hover{
+                    color:#F9C002;
+                }
             }
         }
+
     }
+    
+   
 }

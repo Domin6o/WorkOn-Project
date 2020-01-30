@@ -1,7 +1,7 @@
 <footer class="justify-content-space-between m-3">
     <div class="media">
         <ul class="social-media">
-            <li><h6 class="m-2 d-flex justify-content-start">Obserwuj nas:</h6></li>
+            <li><h5 class="m-2 d-flex justify-content-start">Obserwuj nas:</h5></li>
             <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
             <li><a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a></li>
@@ -23,8 +23,7 @@
         ?>
     </div>
 
-    <p class="d-flex justify-content-center">&copy CAT 2020</p>
-    <!-- <p class="d-flex justify-content-center">A<i class="fas fa-camera"></i>A</p> -->
+    <p class="logo_container d-flex justify-content-center">&copy CAT 2020</p>
 
     <?php wp_footer(); ?> <!-- dodanie skryptów na podstawie functions.php -->
 
