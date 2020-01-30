@@ -4,10 +4,23 @@
     get_header();
 ?>
 
+<div class="container-fluid banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
+<h1 id="contact_header"><?php the_title(); ?></h1>
+</div>
+<div class="container  justify-content-center">
+<div class="m-2 col-12 text-center">
+  <!-- <h1 id="next"><?php the_title(); ?></h1> -->
+</div>
+
+</div>
+
+
+
+
 <div class="container py-5">
     <div class="row justify-content-between">
         <div class="col-lg-4">
-            <h3 class="text-dark font-weight-normal">Dane kontaktowe: </h3>
+            <h3 class="contact_h3">Dane kontaktowe: </h3>
             <br>
             <?php the_content(); ?>
             <!-- <img class="m-3" src="./images/mapa.png" alt="">
@@ -23,7 +36,8 @@
                 Bydgoszcz -->
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
-            <h3 class="text-dark font-weight-normal mb-4">Formularz kontaktowy:</h3>
+
+            <h3 class="contact_h3 mb-4">Formularz kontaktowy:</h3>
             <?php echo do_shortcode('[contact-form-7 id="58" title="Contact form 1"]'); ?>
 <!-- 
             <form action="#">
@@ -42,10 +56,21 @@
                     <textarea class="form-control form-control-lg" id="usermessage" placeholder="Podaj treść"
                         rows="6" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-block btn-dark btn-lg">Wyślij</button>
+                <button type="submit" class="btn btn-block btn-lg">Wyślij</button>
             </form> -->
+
         </div>
-    </div>
+        <div class="col-lg-12 d-flex">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503.20150929038147!2d18.01242711141731!3d53.134549162957704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313c3cf175b6b%3A0xfb9028ce7dca0e0d!2sGda%C5%84ska%20100%2C%2085-021%20Bydgoszcz!5e0!3m2!1spl!2spl!4v1580373220160!5m2!1spl!2spl" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    
+            </div>
+
+ </div>
+
+        
+
+
+
 
 <?php
     get_footer();
