@@ -13,7 +13,7 @@
 
 <body>
 
-<header class="mb-2">
+<header class="col-lg-12">
     <nav class="nav-menu d-flex justify-content-end">
         <?php
             wp_nav_menu([
@@ -23,10 +23,14 @@
                 "item_spacing" => "|"
             ]); 
         ?>
-        
-         <form id="search" action="<?php echo get_home_url("http://localhost/WorkOn_Project/?page_id=229"); ?>">
+        <div class="s-container">
+             <form class="d-flex align-items-baseline" id="search" action="<?php echo get_home_url("http://localhost/WorkOn_Project/?page_id=229"); ?>">
             <input type="text" name="s" id="s" class="form-control" placeholder="Wyszukaj">
+            <button type="submit" class="search-btn">Szukaj</button>
         </form>
+     
+        </div>
+        
 
     </nav>
 </header>
