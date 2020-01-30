@@ -16,24 +16,20 @@
     <?php if ($offer_items->have_posts()) : while ($offer_items->have_posts()) :
         $offer_items->the_post() ?>
         
-        <div class="col-3 p-2 mx-4">
+        <div class="col-lg-4 col-sm-6 col-12 offer-container__col">
 
-        <!-- Ikonki -->
+        <!-- Treść -->
 
-         <a class="m-2" href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>">
-      
-      
-         <!-- Pojawienie się tytułu wpisów -->
-
-         <a href="<?php the_permalink(); ?>"><h2 class="m-2"><?php the_title(); ?></h2></a>
+         <a class="offer-container__link" href="<?php the_permalink(); ?>">
+            <img class=" offer-container__icon" src="<?php echo get_the_post_thumbnail_url(); ?>">
+            <h2 class="offer-container__title"><?php the_title(); ?></h2>
+            <div class="offer-container__content">
+                <?php the_excerpt(); ?>
+            </div>
+         </a>
+    
 
 <!-- Treść wpisów z wordpressa -->
-
-          <p class="m"> 
-
-        <?php the_content(); ?>
-
-            </p>
   
         </div>
     

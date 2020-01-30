@@ -1,6 +1,25 @@
 
-    a {
-        color: white;
-   
-     }
-
+.offer-container__col {
+    padding-top: 50px;
+}
+.offer-container__link {
+    color: #fff;
+    transition: color .3s ease;
+    display: block;
+    text-align: center;
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: #F9C002; 
+    }
+}
+.offer-container__icon {
+    height: 120px;
+    max-width: 100%;
+}
+.offer-container__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.offer-container__content {
+    font-size: 1.1rem;
+}
