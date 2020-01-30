@@ -55,12 +55,14 @@
 </div>
 
 <div class="buttons d-flex justify-content-center">
+ 
+          <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
 
-    <button type="button" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz Portfolio</a></button>
-    <button type="button" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=18">Skontaktuj się z Nami</a></button>
+     
+         <button type="button" id="second" class="btn btn-outline-dark m-5">  <a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>
 
 
-</div>
+  </div>
 
 
 
