@@ -3,21 +3,32 @@
  get_header(); ?>
 
 <main>
-        <div class="container mb-5">
+        <div class="container_search_loop container mt-5">
             <?php if (have_posts()) : while (have_posts()) : the_post() ?>
-                <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 
-                        <div class="text-muted py-1 my-3 border-top border-bottom">
+                <div class="row mt-5 container_search">
+                    <div class="col-lg-12">
+
+                        <a class="search_link" href="<?php the_permalink(); ?>">
+
+                        <h2><?php the_title(); ?></h2>
+
+                        </a>
+
+                     <div class="container_date_author">
                             Opublikowano: <?php the_date("d.m.Y"); ?> | Autor: <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php echo get_the_author_meta("display_name"); ?></a>
-                        </div>
+                        </div>   
 
-                        <?php the_content(); ?>
+               <div class="search_content">
 
-                        <a href="<?php the_permalink(); ?>" class="btn btn-warning">Czytaj więcej</a>
-                    </div>
-                </div>
+                         <?php the_content(); ?>
+
+                         
+	<button type="button" class="btn_more"><a href="<?php the_permalink(); ?>">Czytaj więcej></a></button>
+             
+                  </div>
+            </div>             
+    </div>
             <?php endwhile; ?>
                 <div class="pt-5 text-center"><p><?php posts_nav_link(); ?></p></div>
             <?php else : ?>    
