@@ -5,10 +5,16 @@
 @import "offer";
 @import "about";
 @import "portfolio";
+@import "header";
+@import "contact";
+@import "search";
 
 body {
     background-color: #0F0C0C;
-    background: linear-gradient(50deg, #0F0C0C, black, #0D0E11, black, #0F0C0C, black, #0D0E11, black);
+    background: linear-gradient(50deg, #0F0C0C, black, #0D0E11, black, #0F0C0C,
+            black, #0D0E11, black);
+            font-family: 'Roboto';
+
 
     i {
         color: white;
@@ -16,8 +22,8 @@ body {
         font-size: 0.6em;
 
         &:hover {
-            color: yellow;
-            transition: 0.4s;
+            color: #F9C002;
+            transition: 0.3s ease;
         }
     }
 
@@ -32,7 +38,7 @@ body {
 
     h1 {
         color: #C7C9B9;
-        font-family: "Arial";
+        font-family: "Roboto";
     }
 
     div {
@@ -41,57 +47,101 @@ body {
         font-size: 1.1em;
     }
 
-    .nav-menu {
-
-        list-style: none;
-        font-size: 1.2em;
-        font-family: 'Pathway Gothic One', sans-serif;
-        background-color: #F9C002;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        padding: 10px;
-        text-align: center;
-
-        li {
-            display: inline-block;
-            padding: 10px;
-            font-family: 'Pathway Gothic One', sans-serif;
-
-            a {
-                color: #25211E;
-                text-decoration: none;
-            }
-        }
-    }
 
     .carousel-inner {
         width: 100%;
+        margin-top: -90px;
     }
 
-    button {
-        color: #C7C9B9;
-        text-decoration: none;
-        font-size: 1.8em;
-    }
 
-    .buttons {
-        a {
-            font-size: 1.8em;
-            text-decoration: none;
-            color: #C7C9B9;
+
+//Zajawka na stronie głównej-o nas i oferta
+
+    .container_au {
+
+        h1 {
+            font-family: 'Roboto';
         }
-    }
 
-    .btn {
-        a {
-            text-decoration: none;
-            font-family: 'Caveat', cursive;
+        p {
             padding: 20px;
-            color: #C7C9B9;
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-family: 'Roboto';
         }
-        &:hover a{
-            color: #F9C002;
+
+        display: inline-block;
+        text-align: center;
+
+        .btn_more {
+
+            background-color: transparent;
+            border-radius: 4px;
+            border: 2px solid grey;
+            padding: 12px 4px;
+            display: inline-block;
+            margin:10px;
+
+            a {
+                text-decoration: none;
+                font-family: 'Caveat', cursive;
+                padding: 20px;
+                color: #C7C9B9;
+                font-size: 25px;
+
+                &:hover{
+                    color: #F9C002;
+                    transition: 0.3s ease;
+                     }
+            }
+
+            &:hover{
+                background-color: black;
+                opacity: 0.4;
+                transition: 0.3s ease;
+            }
+           
+
         }
+                
+                    
     }
+
+// Przyciski na dole strony
+
+    .buttons{
+        #first, #second{
+
+            background-color: transparent;
+            border-radius: 4px;
+            border: 2px solid grey;
+            padding: 24px 12px;
+            display: inline-block;
+            margin:10px;
+    
+            a {
+                text-decoration: none;
+                font-family: 'Caveat', cursive;
+                padding: 20px;
+                color: #C7C9B9;
+                font-size: 25px;
+    
+                &:hover{
+                    color: #F9C002;
+                    transition: 0.3s ease;
+                     }
+            }
+    
+            &:hover{
+                
+                background-color: black;
+                opacity: 0.4;
+                transition: 0.3s ease;
+            }
+        }
+       
+    }
+    
+
 }
