@@ -26,12 +26,14 @@
 <h1 class="title_team   d-flex justify-content-center">Nasz zespół</h1>
 
 <div class="mt-4 team-container d-flex justify-content-center">
+
     <ul class="team_list col-8">
+      <div class="container_team">
         <?php if ($team_items->have_posts()) : while ($team_items->have_posts()) : $team_items->the_post() ?>
           <li>
             <div class="team row mt-5">
                     <!-- <div class="col-lg-4 mb-3 mb-lg-0"> -->
-                        <div col-12>
+                        <div class="col-12">
                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="img-fluid img-thumbnail">
                     <!-- </div> -->
                     <!-- <div class="col-lg-8"> -->
@@ -48,8 +50,9 @@
             <?php else : ?>
                 <p class="text-muted text-center my-5">Brak wyników</p>
             <?php endif; ?>
-
+        </div>
     </ul>
+  
 
 
 </div>

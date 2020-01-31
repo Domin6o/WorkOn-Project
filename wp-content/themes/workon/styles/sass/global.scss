@@ -20,9 +20,24 @@ body {
         opacity: 0.4;
         font-size: 0.6em;
 
-        &:hover {
-            color: #F9C002;
-            transition: 0.3s ease;
+        &.sm:hover {
+            color: #15069E;
+            transform: scale(1.5);
+        }
+
+        &.i-sm:hover {
+            color: #D800D8;
+            transform: scale(1.5);
+        }
+
+        &.gyp-sm:hover {
+            color: #E50000;
+            transform: scale(1.5);
+        }
+
+        &.s-sm:hover {
+            color: $myyellow;
+            transform: scale(1.5);
         }
     }
 
@@ -48,7 +63,8 @@ body {
 
     .carousel-inner {
         width: 100%;
-        margin-top: -90px;
+        max-height: 790px;
+
     }
 
     //Zajawka na stronie głównej-o nas i oferta
@@ -84,8 +100,10 @@ body {
                 font-size: 25px;
 
                 &:hover {
-                    color: #F9C002;
-                    transition: 0.3s ease;
+                    .sm:hover{
+                        color: #F9C002;
+                        transition: 0.3s ease;
+                    }
                 }
             }
         }
@@ -110,7 +128,7 @@ body {
                 font-size: 25px;
             
                 &:hover{
-                    color: #F9C002;
+                    color: $myyellow;
                     transition: 0.3s ease;
                 }
             }
@@ -136,8 +154,4 @@ body {
             color: #F9C002;
         }
     }
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Righteous', cursive;
 }

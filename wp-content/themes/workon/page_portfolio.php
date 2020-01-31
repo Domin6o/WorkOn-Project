@@ -10,7 +10,17 @@
     get_header();
 ?>
 
-<?php get_template_part("portfolio_header"); ?>
+<div class="container-fluid banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
+<h1 id="next"><?php the_title(); ?></h1>
+</div>
+<div class="mx-5 my-5">
+    <!-- <h1 class="m-2 text-center"><?php echo get_the_title(42); ?></h1> -->
+    <p><?php echo get_the_content('', '', 42); ?></p>
+</div>
+
+<?php
+    get_template_part("portfolio_links");
+?>
 
 <div class="portfolio-container container my-3">
     <div class="row">

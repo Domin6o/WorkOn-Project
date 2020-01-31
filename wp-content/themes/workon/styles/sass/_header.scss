@@ -41,6 +41,22 @@ header {
                 opacity: 1;
             }
         }
+.nav-menu {
+    position: fixed;
+    list-style: none;
+    font-size: 1.2em;
+    background-color:black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    margin:0;
+    padding: 10px;
+    text-align: center;
+    display: block;
+   
+
+ 
 
         ul {
             padding-right: 50px;
@@ -57,6 +73,11 @@ header {
                 }
             }
         }
+
+        a:hover {
+            color: $myyellow;
+        }
+    }
 
         &:hover{
             // background-color: black;

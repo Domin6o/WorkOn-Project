@@ -36,9 +36,13 @@
 
 .portfolio-filters {
     padding: 10px 0;
+<<<<<<< Updated upstream
     background-color: $mygrey;
     background-color: rgba(80, 80, 80, 0.3);
     margin-bottom: 2rem;
+=======
+    background-color: $myyellow;
+>>>>>>> Stashed changes
 
     ul {
         display: flex;
@@ -56,11 +60,16 @@
                 text-decoration: none;
                 text-align: center;
                 font-weight: bold;
+<<<<<<< Updated upstream
                 color: rgba(40, 40, 40, 1);;
+=======
+                color: black;
+>>>>>>> Stashed changes
                 background-color: $mywhite;
                 transition: box-shadow 400ms;
 
                 &:hover {
+<<<<<<< Updated upstream
                     box-shadow: 0 0 12px $mywhite;
                 }
 
@@ -70,6 +79,11 @@
                     &:hover {
                         box-shadow: 0 0 12px yellow;
                     }
+=======
+                    color: black;
+                    border: 1px solid black;
+                    background-color: $myyellow;
+>>>>>>> Stashed changes
                 }
             }
         }

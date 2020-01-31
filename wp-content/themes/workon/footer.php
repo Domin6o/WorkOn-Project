@@ -2,14 +2,14 @@
     <div class="media">
         <ul class="social-media">
             <li><h5 class="m-2 d-flex justify-content-start">Obserwuj nas:</h5></li>
-            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i></a></li>
-            <li><a href="https://pl.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://pl.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
-            <li><a href="https://www.google.com/"><i class="fab fa-google"></i></a></li>
-            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="sm fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/?lang=pl"><i class="sm fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/?hl=pl"><i class="i-sm fab fa-instagram"></i></a></li>
+            <li><a href="https://www.snapchat.com/"><i class="s-sm fab fa-snapchat"></i></a></li>
+            <li><a href="https://pl.linkedin.com/"><i class="sm fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://pl.pinterest.com/"><i class="gyp-sm fab fa-pinterest"></i></a></li>
+            <li><a href="https://www.google.com/"><i class="gyp-sm fab fa-google"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="gyp-sm fab fa-youtube"></i></a></li>
         </ul>
     </div>
 
@@ -23,7 +23,7 @@
         ?>
     </div>
 
-    <p class="logo_container d-flex justify-content-center">&copy CAT 2020</p>
+    <p class="logo_container d-flex justify-content-center">&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?></p>
 
     <?php wp_footer(); ?> <!-- dodanie skryptów na podstawie functions.php -->
 
