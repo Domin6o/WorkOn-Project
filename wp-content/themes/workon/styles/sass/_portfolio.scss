@@ -1,6 +1,44 @@
-.filter-list {
+.portfolio-title {
+    position: relative;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.8);
+        mix-blend-mode: multiply;
+
+        h1, p {
+            font-weight: bold;
+            // color: black;
+            color: white;
+            opacity: 1;
+        }
+
+        h1 {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 6rem;
+        }
+        
+        p {
+            margin: 0 4rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+.portfolio-filters {
     padding: 10px 0;
     background-color: $mygrey;
+    background-color: rgba(80, 80, 80, 0.3);
+    margin-bottom: 2rem;
 
     ul {
         display: flex;
@@ -18,13 +56,54 @@
                 text-decoration: none;
                 text-align: center;
                 font-weight: bold;
-                color: $mygrey;
+                color: rgba(40, 40, 40, 1);;
                 background-color: $mywhite;
+                transition: box-shadow 400ms;
 
                 &:hover {
-                    color: $mygrey;
-                    background-color: $myblue;
+                    box-shadow: 0 0 12px $mywhite;
                 }
+
+                &.active {
+                    background-color: yellow;
+
+                    &:hover {
+                        box-shadow: 0 0 12px yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.portfolio-container {
+    figure {
+        // position: relative;
+        overflow: hidden;
+        border-radius: 0 10% 0 10%;
+        background-color: rgba(0,0,0,0.5);
+        transition: box-shadow 400ms;
+
+        img {
+            margin: 0;
+        }
+
+        figcaption {
+            // position: absolute;
+            // left: 0;
+            // bottom: 0;
+            padding: 5px;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-weight: bold;
+            color: white;
+            transition: color 400ms;
+        }
+
+        &:hover {
+            box-shadow: 0 0 12px yellow;
+
+            figcaption {
+                color: yellow;
             }
         }
     }

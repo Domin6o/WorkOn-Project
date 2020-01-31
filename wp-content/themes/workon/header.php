@@ -15,6 +15,14 @@
 
 <header class="col-lg-12">
     <nav class="nav-menu d-flex justify-content-end">
+        <img src="<?php echo IMAGES; ?>/logo3.png" alt="CAT">
+        
+        <div>
+            <p>Creative</p>
+            <p>Arts</p>
+            <p>Team</p>
+        </div>
+
         <?php
             wp_nav_menu([
                 "theme_location" => "header-nav-menu",
