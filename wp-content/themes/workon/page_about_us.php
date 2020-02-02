@@ -11,14 +11,17 @@
     the_post();
     get_header();
 ?>
+<div class=" about_desc">
 <div class="container-fluid banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
 <h1 id="next"><?php the_title(); ?></h1>
+</div>
 </div>
 <div class=" about_desc container  justify-content-center">
 <div class="m-2 col-12 text-center">
   <!-- <h1 id="next"><?php the_title(); ?></h1> -->
   <?php the_content(); ?>
 </div>
+
 
 </div>
 
@@ -27,9 +30,12 @@
 
 <div class="mt-4 team-container d-flex justify-content-center">
 
-    <ul class="team_list col-8">
+
+    <ul class="team_list col-8 col-sm-12">
       <div class="container_team">
+      
         <?php if ($team_items->have_posts()) : while ($team_items->have_posts()) : $team_items->the_post() ?>
+        
           <li>
             <div class="team row mt-5">
                     <!-- <div class="col-lg-4 mb-3 mb-lg-0"> -->

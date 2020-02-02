@@ -4,9 +4,9 @@
             <li><h5 class="m-2 d-flex justify-content-start">Obserwuj nas:</h5></li>
             <li><a href="https://www.facebook.com/"><i class="sm fab fa-facebook"></i></a></li>
             <li><a href="https://twitter.com/?lang=pl"><i class="sm fab fa-twitter"></i></a></li>
+            <li><a href="https://pl.linkedin.com/"><i class="sm fab fa-linkedin-in"></i></a></li>
             <li><a href="https://www.instagram.com/?hl=pl"><i class="i-sm fab fa-instagram"></i></a></li>
             <li><a href="https://www.snapchat.com/"><i class="s-sm fab fa-snapchat"></i></a></li>
-            <li><a href="https://pl.linkedin.com/"><i class="sm fab fa-linkedin-in"></i></a></li>
             <li><a href="https://pl.pinterest.com/"><i class="gyp-sm fab fa-pinterest"></i></a></li>
             <li><a href="https://www.google.com/"><i class="gyp-sm fab fa-google"></i></a></li>
             <li><a href="https://www.youtube.com/"><i class="gyp-sm fab fa-youtube"></i></a></li>

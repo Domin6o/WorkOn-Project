@@ -48,6 +48,7 @@ header {
                 display: inline-block;
                 padding: 10px;
                 font-family: 'Montserrat Alternates', sans-serif;
+
     
                 a {
                     // color: #25211E;
@@ -56,7 +57,7 @@ header {
                     transition: color 400ms;
 
                     &:hover {
-                        color: yellow;
+                        color: $myyellow;
                         text-decoration: none;
                     }
                 }

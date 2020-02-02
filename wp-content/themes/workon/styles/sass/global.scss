@@ -101,7 +101,7 @@ body {
 
                 &:hover {
                     .sm:hover{
-                        color: #F9C002;
+                        color: $myyellow;
                         transition: 0.3s ease;
                     }
                 }
@@ -151,7 +151,7 @@ body {
             color: #C7C9B9;
         }
         &:hover a {
-            color: #F9C002;
+            color: $myyellow;
         }
     }
 }

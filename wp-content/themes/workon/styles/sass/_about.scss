@@ -6,9 +6,9 @@
 
     img {
         float: left;
-        width: 160px;
+        width: 165px;
         height: auto;
-        margin-right: 20px;
+        margin-top: 10px;
         margin-bottom: 10px;
         border: 8px solid $myyellow;
         border-radius: 50%;
@@ -19,13 +19,17 @@
     list-style: none;
 }
 
-.container_team li:nth-child(odd) div {
+
+.container_team li:nth-child(odd) img {
     float: left;
+    margin-right: 30px;
 }
 
 
-.container_team li:nth-child(even) div {
+.container_team li:nth-child(even) img {
+    clear: both;
     float: right;
+    margin-left: 30px;
 }
 
 .team_list li div h2 {
@@ -38,7 +42,7 @@ h1.title_team {
 
 .about_desc {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2git em;
+    font-size: 1.2em;
 }
 
 #next {
@@ -56,8 +60,28 @@ h1.title_team {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 790px;
+    width: 100%;
+    min-height: 730px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width:1024px) {
+
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:568px) {
+
+}
+
+@media screen and (max-width:576px) {
+    .team_list .container_team li img {
+        float: left;
+        margin-right: 30px;
+    }
+
 }
