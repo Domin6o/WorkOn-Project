@@ -1,15 +1,8 @@
-<?php 
-/* Template Name: Start */
+<?php
+	/* Template Name: Start */
 
-$portfolio_items = new WP_Query(array(
-	"post_type" => "portfolio",
-	"posts_per_page" => -1,
-	"order" => "DESC",
-	"orderby" => "title",
-));
-
-get_header(); ?>
-
+	get_header();
+?>
 
 <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-ride="carousel">
 	<ol class="carousel-indicators">
@@ -67,31 +60,20 @@ get_header(); ?>
 
 </div>
 
-
 <!-- Portfolio -->
-<div class="container_au col-lg-12 col-sm-6 offset-sm-0 col-10 offset-1">
-<h2 class="mt-5 d-flex justify-content-center">Ostatnie realizacje</h2>
-<div class="container d-flex justify-content-center my-5"
-        <?php if ($portfolio_items->have_posts()) : while ($portfolio_items->have_posts()) : $portfolio_items->the_post() ?>>
-            <figure class="figure">
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="figure-img img-thumbnail" alt="<?php the_title(); ?>">
-                <figcaption class="figure-caption"><?php the_title(); ?></figcaption>
-            </figure>
-        <?php endwhile; ?>
-        <?php else : ?>    
-            <p class="text-muted text-center my-5">Nie znaleziono realizacji</p>
-        <?php endif; ?>
-    </div>
+<div class="portfolio-front container-fluid">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-11 col-xl-10">
+			<h2 class="my-4 text-center">Ostatnie realizacje</h2>
+			<?php get_template_part("partials/front", "portfolio"); ?>
 		</div>
+	</div>
+</div>
+
 <!-- Przyciski -->
 <div class="buttons d-flex justify-content-center">
- 
-<button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
-
-     
-<button type="button" id="second" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>
-
-
-  </div>
+	<button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
+	<button type="button" id="second" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>
+</div>
 
 <?php get_footer(); ?>

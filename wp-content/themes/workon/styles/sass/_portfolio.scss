@@ -54,8 +54,8 @@
             a {
                 display: block;
                 min-width: 100px;
-                padding: 10px 20px;
-                border-radius: 100vw;
+                padding: 10px 30px;
+                border-radius: 0 100vw;
                 text-decoration: none;
                 text-align: center;
                 font-weight: bold;
@@ -80,33 +80,119 @@
 }
 
 .portfolio-container {
-    figure {
-        // position: relative;
+    a {
+        display: inline-block;
+        height: 100%;
+
+        figure {
+            // position: relative;
+            display: flex;
+            flex-direction: column;
+            height: inherit;
+            margin: 0;
+            border-radius: 0 10%;
+            overflow: hidden;
+            background-color: rgba(0,0,0,0.5);
+            transition: box-shadow 400ms;
+    
+            img {
+                margin: auto 0;
+            }
+    
+            figcaption {
+                padding: 5px;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-weight: bold;
+                color: white;
+                transition: color 400ms;
+            }
+    
+            &:hover {
+                box-shadow: 0 0 12px yellow;
+    
+                figcaption {
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
+
+.portfolio-post {
+    h1 {
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+    img {
+        border-radius: 0 10%/15%;
+    }
+}
+
+div.portfolio-front {
+    opacity: 1;
+
+    h2 {
+        font-size: 3rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: bold;
+    }
+
+    .carousel-indicators {
+        li:hover {
+            background-color: yellow;
+        }
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        i {
+            opacity: 1;
+
+            &:before {
+                font-size: 4rem;
+                text-shadow: 0.2rem 0.2rem 0.4rem black;
+                color: white;
+                transition: color 0.4s;
+            }
+        }
+            
+        &:hover {
+            i:before {
+                color: yellow;
+            }
+        }
+    }
+
+    .carousel-item {
+        position: relative;
+        height: 50vw;
+        border-radius: 0 10%/20%;
         overflow: hidden;
-        border-radius: 0 10% 0 10%;
         background-color: rgba(0,0,0,0.5);
-        transition: box-shadow 400ms;
 
         img {
-            margin: 0;
+            position: absolute;   
+            top: 50%;
+            transform: translateY(-50%);
         }
 
-        figcaption {
-            // position: absolute;
-            // left: 0;
-            // bottom: 0;
-            padding: 5px;
-            font-family: 'Montserrat Alternates', sans-serif;
-            font-weight: bold;
-            color: white;
-            transition: color 400ms;
-        }
+        div {
+            // mix-blend-mode: multiply;
+            
+            a {
+                text-decoration: none;
+                text-shadow: 0.2rem 0.2rem 0.4rem black;
+                color: white;
+                transition: color 0.4s;
+        
+                h4 {
+                    font-size: 4rem;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-weight: bold;
+                }
 
-        &:hover {
-            box-shadow: 0 0 12px yellow;
-
-            figcaption {
-                color: yellow;
+                &:hover {
+                    color: yellow;
+                }
             }
         }
     }
