@@ -12,7 +12,7 @@
 <div class="container-fluid banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
 <h1 id="offer_header"><?php the_title(); ?></h1>
 </div>
-<div class="container  justify-content-center">
+<div class="container justify-content-center">
 <div class="m-2 col-12 text-center">
   <!-- <h1 id="next"><?php the_title(); ?></h1> -->
 </div>

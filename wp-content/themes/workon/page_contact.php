@@ -14,12 +14,9 @@
 
 </div>
 
-
-
-
 <div class="container py-5">
     <div class="row justify-content-between">
-        <div class="col-lg-4">
+        <div class="contact-info col-lg-4 mx-3">
             <h3 class="contact_h3">Dane kontaktowe: </h3>
             <br>
             <?php the_content(); ?>
@@ -37,7 +34,7 @@
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
 
-            <h3 class="contact_h3 mb-4">Formularz kontaktowy:</h3>
+            <h3 class="contact_h3 mb-4 mx-sm-4 mx-lg-0 mx-md-0">Formularz kontaktowy:</h3>
             <?php echo do_shortcode('[contact-form-7 id="58" title="Contact form 1"]'); ?>
 <!-- 
             <form action="#">
@@ -66,10 +63,6 @@
             </div>
 
  </div>
-
-        
-
-
 
 
 <?php

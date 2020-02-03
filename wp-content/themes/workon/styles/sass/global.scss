@@ -9,6 +9,7 @@
 @import "contact";
 @import "search";
 
+
 body {
     background-color: #0F0C0C;
     background:
@@ -151,4 +152,15 @@ body {
             color: $myyellow;
         }
     }
+}
+
+@media screen and (max-width: 900px){
+    
+        .container_au {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 90%;
+        }
+    
 }
