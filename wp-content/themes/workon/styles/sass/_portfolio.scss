@@ -68,10 +68,10 @@
                 }
 
                 &.active {
-                    background-color: yellow;
+                    background-color: $myyellow;
 
                     &:hover {
-                        box-shadow: 0 0 12px yellow;
+                        box-shadow: 0 0 12px $myyellow;
                     }
                 }
             }
@@ -108,10 +108,10 @@
             }
     
             &:hover {
-                box-shadow: 0 0 12px yellow;
+                box-shadow: 0 0 12px $myyellow;
     
                 figcaption {
-                    color: yellow;
+                    color: $myyellow;
                 }
             }
         }
@@ -139,7 +139,7 @@ div.portfolio-front {
 
     .carousel-indicators {
         li:hover {
-            background-color: yellow;
+            background-color: $myyellow;
         }
     }
     
@@ -157,7 +157,7 @@ div.portfolio-front {
             
         &:hover {
             i:before {
-                color: yellow;
+                color: $myyellow;
             }
         }
     }
@@ -191,7 +191,7 @@ div.portfolio-front {
                 }
 
                 &:hover {
-                    color: yellow;
+                    color: $myyellow;
                 }
             }
         }

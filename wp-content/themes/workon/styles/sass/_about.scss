@@ -20,13 +20,13 @@
 }
 
 
-.container_team li:nth-child(odd) img {
+#avatar li:nth-child(odd) img {
     float: left;
     margin-right: 30px;
 }
 
 
-.container_team li:nth-child(even) img {
+#avatar li:nth-child(even) img {
     clear: both;
     float: right;
     margin-left: 30px;
@@ -67,6 +67,20 @@ h1.title_team {
     background-repeat: no-repeat;
 }
 
+    .team-container__link {
+        color: #fff;
+        transition: color .3s ease;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        animation-delay: 2s;
+        animation-duration: 2s;
+        &:hover, &:focus, &:active {
+            text-decoration: none;
+            color: $myyellow; 
+        }
+    }
+
 
 @media screen and (max-width:1024px) {
 
@@ -83,5 +97,4 @@ h1.title_team {
         float: left;
         margin-right: 30px;
     }
-
 }

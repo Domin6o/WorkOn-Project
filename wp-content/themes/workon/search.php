@@ -15,9 +15,9 @@
 
                         </a>
 
-                     <div class="container_date_author">
+                     <!-- <div class="container_date_author">
                             Opublikowano: <?php the_date("d.m.Y"); ?> | Autor: <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php echo get_the_author_meta("display_name"); ?></a>
-                        </div>   
+                        </div>    -->
 
                <div class="search_content">
 

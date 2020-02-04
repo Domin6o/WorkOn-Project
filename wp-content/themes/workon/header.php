@@ -16,7 +16,7 @@
 
 <header class="col-lg-12 animated fadeInDown">
     <nav class="nav-menu d-flex justify-content-end">
-        <img src="<?php echo IMAGES; ?>/logo3.png" alt="CAT">
+        <a href="http://localhost/WorkOn_Project/?page_id=229" rel="home"><img src="<?php echo IMAGES; ?>/logo3.png" alt="CAT"></a>
         
         <div>
             <p>Creative</p>
