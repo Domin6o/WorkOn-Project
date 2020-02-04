@@ -8,6 +8,7 @@
 @import "header";
 @import "contact";
 @import "search";
+@import "single-offer";
 
 
 body {
@@ -66,10 +67,12 @@ body {
         max-height: 790px;
     }
 
-    //Zajawka na stronie głównej-o nas i oferta
+    //Zajawka na stronie głównej-o nas
     .container_au {
         display: inline-block;
         text-align: center;
+        animation-delay: 2s;
+        animation-duration: 3s;
 
         h1 {
             font-family: 'Roboto';
@@ -107,6 +110,51 @@ body {
             }
         }
     }
+
+    //Zajawka na stronie głównej-oferta
+    .container_off {
+        display: inline-block;
+        text-align: center;
+        animation-delay: 4s;
+        animation-duration: 2s;
+
+        h1 {
+            font-family: 'Roboto';
+        }
+
+        p {
+            padding: 20px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-family: 'Roboto';
+        }
+
+        .btn_more {
+            background-color: transparent;
+            border-radius: 4px;
+            border: 2px solid grey;
+            padding: 12px 4px;
+            display: inline-block;
+            margin:10px;
+
+            a {
+                text-decoration: none;
+                font-family: 'Caveat', cursive;
+                padding: 20px;
+                color: #C7C9B9;
+                font-size: 25px;
+
+                &:hover {
+                    .sm:hover{
+                        color: $myyellow;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+
 
     // Przyciski na dole strony
     .buttons{

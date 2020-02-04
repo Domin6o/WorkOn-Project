@@ -16,7 +16,7 @@
 
 <div class="container py-5">
     <div class="row justify-content-between">
-        <div class="contact-info col-lg-4 mx-3">
+        <div class="contact-info col-lg-4 mx-3 animated fadeInLeft">
             <h3 class="contact_h3">Dane kontaktowe: </h3>
             <br>
             <?php the_content(); ?>

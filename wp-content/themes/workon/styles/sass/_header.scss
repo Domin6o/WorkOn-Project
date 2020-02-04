@@ -19,6 +19,8 @@ header {
         background-color: rgba(0, 0, 0, 0.6);
         transition: background-color 400ms;
         z-index: 1;
+        animation-delay: 1s;
+        animation-duration: 2s;
         
         img {
             width: auto;

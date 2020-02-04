@@ -7,6 +7,8 @@
     transition: color .3s ease;
     display: block;
     text-align: center;
+    animation-delay: 2s;
+    animation-duration: 2s;
     &:hover, &:focus, &:active {
         text-decoration: none;
         color: #F9C002; 

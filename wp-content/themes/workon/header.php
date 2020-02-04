@@ -9,11 +9,12 @@
 
     <?php wp_head(); ?> <!-- dodanie styli na podstawie functions.php -->
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
 
-<header class="col-lg-12">
+<header class="col-lg-12 animated fadeInDown">
     <nav class="nav-menu d-flex justify-content-end">
         <img src="<?php echo IMAGES; ?>/logo3.png" alt="CAT">
         

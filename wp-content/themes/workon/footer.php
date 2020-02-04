@@ -11,6 +11,7 @@
             <li><a href="https://www.google.com/"><i class="gyp-sm fab fa-google"></i></a></li>
             <li><a href="https://www.youtube.com/"><i class="gyp-sm fab fa-youtube"></i></a></li>
         </ul>
+
     </div>
 
     <div class="m-3 d-flex justify-content-center">
