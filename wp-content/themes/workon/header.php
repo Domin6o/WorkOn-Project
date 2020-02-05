@@ -14,33 +14,46 @@
 
 <body>
 
-<header class="col-lg-12 animated fadeInDown">
-    <nav class="nav-menu d-flex justify-content-end">
-        <a href="http://localhost/WorkOn_Project/?page_id=229" rel="home"><img src="<?php echo IMAGES; ?>/logo3.png" alt="CAT"></a>
-        
-        <div>
-            <p>Creative</p>
-            <p>Arts</p>
-            <p>Team</p>
+<header class="col-lg-12">
+    <nav class="nav-menu d-flex justify-content-between">
+        <a class="navbar-brand d-flex" href="<?php echo get_site_url(); ?>" rel="home">
+            <img src="<?php echo IMAGES; ?>/logo3.png" alt="CAT">
+            <div>
+                <p>Creative</p>
+                <p>Arts</p>
+                <p>Team</p>
+            </div>
+        </a>
+
+        <div class="links-horizontal d-none d-md-block">
+            <?php
+                wp_nav_menu([
+                    "theme_location" => "header-nav-menu",
+                    "container" => "ul",
+                    "menu_class" => "list-inline"
+                ]); 
+            ?>
+        </div>
+        <div class="links-vertical dropdown d-block d-md-none">
+            <!-- <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button> -->
+            <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
+            <?php
+                wp_nav_menu([
+                    "theme_location" => "header-nav-menu",
+                    "container" => "ul",
+                    "menu_class" => "dropdown-menu dropdown-menu-right"
+                ]); 
+            ?>
         </div>
 
-        <?php
-            wp_nav_menu([
-                "theme_location" => "header-nav-menu",
-                "container" => "ul",
-                "menu_class" => "list-inline",
-                "item_spacing" => "|"
-            ]); 
-        ?>
-        <div class="s-container">
-             <form class="d-flex align-items-baseline" id="search" action="<?php echo get_home_url("http://localhost/WorkOn_Project/?page_id=229"); ?>">
-            <input type="text" name="s" id="s" class="form-control" placeholder="Wyszukaj">
-            <button type="submit" class="search-btn">Szukaj</button>
-        </form>
-     
+        <div class="s-container d-none d-lg-flex align-items-center">
+            <form class="d-flex align-items-baseline" id="search" action="<?php echo get_site_url(); ?>">
+                <input type="text" name="s" id="s" class="form-control" placeholder="Wyszukaj">
+                <button type="submit" class="search-btn">Szukaj</button>
+            </form>
         </div>
-        
-
     </nav>
 </header>
 

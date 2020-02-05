@@ -26,20 +26,16 @@
         wp_enqueue_script("scripts", SCRIPTS . "/jquery-3.4.1.min.js");
         wp_enqueue_script("popper", SCRIPTS . "/popper.min.js");
         wp_enqueue_script("bootstrap", SCRIPTS . "/bootstrap.min.js");
+        wp_enqueue_script("main", SCRIPTS . "/main.js");
     }
     add_action("wp_enqueue_scripts", "theme_scripts");
 
     // Animate.css added
-
-      // Animate.css added
-
-      function load_animate_css() {
-        // Load Boostrap CSS
-        wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' );
-      
-      }
-      
-      add_action( 'wp_enqueue_scripts', 'load_animate_css' );
+    function load_animate_css() {
+      // Load Boostrap CSS
+      wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' );
+    }
+    add_action( 'wp_enqueue_scripts', 'load_animate_css' );
 
     //add thumbnails
     add_theme_support("post-thumbnails"); 

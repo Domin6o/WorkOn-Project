@@ -31,7 +31,7 @@
 	</a>
 </div>
 
-<div class="container_au col-xl-12 col-lg-12 col-md-10 col-sm-6 offset-sm-0 col-10 offset-1 animated fadeIn">
+<div class="container_au col-xl-12 col-lg-12 col-md-10 col-sm-6 offset-sm-0 col-10 offset-1 do-animated do-fadeInRight">
 
 <h1 class="d-flex justify-content-center my-5">O nas</h1>
 
@@ -45,7 +45,8 @@
 
 </div>
 
-<div class="container_off col-xl-12 col-lg-12 col-md-10 col-sm-10 offset-sm-0 col-10 offset-1 animated fadeInRight">
+<!-- <div class="container_off col-xl-12 col-lg-12 col-md-10 col-sm-10 offset-sm-0 col-10 offset-1 animated fadeInRight"> -->
+<div class="container_off col-xl-12 col-lg-12 col-md-10 col-sm-10 offset-sm-0 col-10 offset-1 do-animated do-fadeInLeft">
 
 <h1 class="d-flex justify-content-center my-5">Oferta</h1>
 

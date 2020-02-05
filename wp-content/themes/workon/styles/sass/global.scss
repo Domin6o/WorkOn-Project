@@ -17,29 +17,31 @@ body {
         linear-gradient(50deg, #0F0C0C, black, #0D0E11, black, #0F0C0C, black, #0D0E11, black);
     font-family: 'Roboto';
 
-    i {
-        color: white;
-        opacity: 0.4;
-        font-size: 0.6em;
-
-        &.sm:hover {
-            color: #15069E;
-            transform: scale(1.5);
-        }
-
-        &.i-sm:hover {
-            color: #D800D8;
-            transform: scale(1.5);
-        }
-
-        &.gyp-sm:hover {
-            color: #E50000;
-            transform: scale(1.5);
-        }
-
-        &.s-sm:hover {
-            color: $myyellow;
-            transform: scale(1.5);
+    footer {
+        i {
+            color: white;
+            opacity: 0.4;
+            font-size: 0.6em;
+    
+            &.sm:hover {
+                color: #15069E;
+                transform: scale(1.5);
+            }
+    
+            &.i-sm:hover {
+                color: #D800D8;
+                transform: scale(1.5);
+            }
+    
+            &.gyp-sm:hover {
+                color: #E50000;
+                transform: scale(1.5);
+            }
+    
+            &.s-sm:hover {
+                color: $myyellow;
+                transform: scale(1.5);
+            }
         }
     }
 
@@ -71,8 +73,6 @@ body {
     .container_au {
         display: inline-block;
         text-align: center;
-        animation-delay: 2s;
-        animation-duration: 3s;
 
         h1 {
             font-family: 'Roboto';
@@ -115,8 +115,6 @@ body {
     .container_off {
         display: inline-block;
         text-align: center;
-        animation-delay: 4s;
-        animation-duration: 2s;
 
         h1 {
             font-family: 'Roboto';
@@ -210,5 +208,4 @@ body {
             align-items: center;
             max-width: 90%;
         }
-    
 }

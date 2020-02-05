@@ -3,110 +3,166 @@ header {
     height: 70px;
     margin: 0;
     padding: 0;
-    z-index: 1;
 
     nav {
-        display: block;
         position: fixed;
         top: 0;
         left: 0;
         min-width: 100%;
         margin:0;
         padding: 5px 20px;
-        list-style: none;
         text-align: center;
-        font-size: 1.2em;
         background-color: rgba(0, 0, 0, 0.6);
         transition: background-color 400ms;
-        z-index: 1;
-        animation-delay: 1s;
-        animation-duration: 2s;
-        
-        img {
-            width: auto;
-            height: 60px;
-            // margin-right: auto;
-        }
-
-        div {
-            margin-right: auto;
-
-            p {
-                margin-bottom: 0;
-                line-height: 20px;
-                font-size: 20px;
-                font-family: 'Montserrat Alternates', sans-serif;
-                font-weight: 700;
-                color: white;
-                opacity: 1;
-            }
-        }
-
-        ul {
-            margin: 0;
-            padding-right: 50px;
-
-            li {
-                display: inline-block;
-                padding: 10px;
-                font-family: 'Montserrat Alternates', sans-serif;
-
-    
-                a {
-                    // color: #25211E;
-                    color: white;
-                    text-decoration: none;
-                    transition: color 400ms;
-
-                    &:hover {
-                        color: $myyellow;
-                        text-decoration: none;
-                    }                  
-                }
-            }
-        }
+        z-index: 10;
 
         &:hover{
             background-color: rgba(0,0,0,1);
         }
-    }
+        
+        a.navbar-brand {
+            padding: 0;
 
+            img {
+                width: auto;
+                height: 60px;
+            }
     
-    .s-container{
-        justify-content: space-between;
-        align-items: baseline;
-
-        #search {
-            .form-control{
-                color: #fff;
-                background-color: transparent;
-                border:0;
-                border-radius:0;
-                border-bottom: 1px solid #fff;
-                margin:0;
-
-                &:active, &:focus {
-                    background-color: white;
-                    border-radius: 2px;
-                    color:black;
+            div {
+                margin-right: auto;
+    
+                p {
+                    margin-bottom: 0;
+                    line-height: 20px;
+                    font-size: 20px;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-weight: 700;
+                    color:white;
+                    transition: color 400ms;
+                    opacity: 1;
                 }
+            }
+
+            &:hover div p {
+                color: $myyellow;
             }
         }
 
-        .search-btn {
-            background-color: transparent; 
-            color: white; 
-            border: 2px solid white;
-            font-family: 'Roboto';
-            border-radius: 5px;
-            font-size: 13px;
-            padding: 8px;
-            opacity: 0.4;
-            margin:10px;
-        
-            &:hover {
-                background-color: white;
-                color:black;
+        div {
+            a {
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+                transition: color 400ms;
+
+                &:hover {
+                    color: $myyellow;
+                    text-decoration: none;
+                }
+            }
+
+            &.links-horizontal ul {
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    padding: 10px 5px;
+                    
+                    a {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+
+            &.links-vertical {
+                a {
+                    display: inline-block;
+                    height: inherit;
+    
+                    i {
+                        font-size: 2rem;
+                        line-height: 60px;
+                        color: white;
+                        transition: color 400ms;
+                    }
+    
+                    &:hover i, &[aria-expanded="true"] i {
+                        color: $myyellow;
+                    }
+                }
+                
+                ul {
+                    padding: 5px 0;
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    transition: background-color 400ms;
+    
+                    li {
+                        margin: 5px 0;
+    
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            padding: 5px 0;
+                            font-size: 1.5rem;
+                            text-align: center;
+                        }
+                    }
+                    
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    
+        div.s-container{
+            form input {
+                margin:0;
+                border: 0;
+                border-radius: 0;
+                border-bottom: 1px solid white;
+                color: white;
+                background-color: transparent;
+                transition: color 400ms,
+                            background-color 400ms;
+
+                &:active, &:focus {
+                    color: black;
+                    background-color: white;
+                }
+            }
+
+            button {
+                margin-left: 10px;
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 1rem;
+                font-family: 'Roboto';
+                color: white;
+                background-color: transparent;
+                opacity: 0.5;
+                transition: color 400ms,
+                            background-color 400ms,
+                            opacity 400ms;
+                
+                &:hover {
+                    color: black;
+                    background-color: white;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        nav {
+            div.links-horizontal ul li a {
+                font-size: 1.5rem;
             }
         }
     }

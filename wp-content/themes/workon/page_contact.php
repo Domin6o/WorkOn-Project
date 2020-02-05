@@ -58,9 +58,8 @@
 
         </div>
         <div class="col-lg-12 d-flex">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503.20150929038147!2d18.01242711141731!3d53.134549162957704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313c3cf175b6b%3A0xfb9028ce7dca0e0d!2sGda%C5%84ska%20100%2C%2085-021%20Bydgoszcz!5e0!3m2!1spl!2spl!4v1580373220160!5m2!1spl!2spl" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503.20150929038147!2d18.01242711141731!3d53.134549162957704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313c3cf175b6b%3A0xfb9028ce7dca0e0d!2sGda%C5%84ska%20100%2C%2085-021%20Bydgoszcz!5e0!3m2!1spl!2spl!4v1580373220160!5m2!1spl!2spl" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
 
  </div>
 
