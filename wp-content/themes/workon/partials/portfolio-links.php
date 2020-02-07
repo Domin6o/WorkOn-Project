@@ -10,7 +10,7 @@
 ?>
 
 <div class="portfolio-filters">
-    <ul class="mx-5 my-3">
+    <ul>
         <li>
             <a href="http://localhost/WorkOn_Project/?page_id=42"
             class="<?php if (!$post_taxonomy_id) : echo "active"; endif; ?>">

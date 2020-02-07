@@ -1,0 +1,47 @@
+.four-o-four {
+    padding: 20px 0;
+    border-radius: 0 10%/20%;
+    background-color: rgba(0,0,0,0.5);
+
+    h2 {
+        display: inline-block;
+        font-size: 8rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: normal;
+        color: white;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .four-o-four h2 {
+        font-size: 10rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .four-o-four h2 {
+        font-size: 12rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .four-o-four { 
+        h2 {
+            font-size: 14rem;
+        }
+
+        p {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .four-o-four h2 {
+        font-size: 16rem;
+    }
+}

@@ -14,18 +14,27 @@ header {
         text-align: center;
         background-color: rgba(0, 0, 0, 0.6);
         transition: background-color 400ms;
-        z-index: 10;
+        z-index: 100;
 
         &:hover{
             background-color: rgba(0,0,0,1);
         }
         
         a.navbar-brand {
+            position: relative;
             padding: 0;
 
             img {
                 width: auto;
                 height: 60px;
+
+                &:last-of-type {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    transition: opacity 400ms;
+                }
             }
     
             div {
@@ -37,14 +46,25 @@ header {
                     font-size: 20px;
                     font-family: 'Montserrat Alternates', sans-serif;
                     font-weight: 700;
-                    color:white;
+                    text-align: left;
+                    color: $mygreen;
                     transition: color 400ms;
                     opacity: 1;
+
+                    &:first-letter {
+                        color: white;
+                    }
                 }
             }
 
-            &:hover div p {
-                color: $myyellow;
+            &:hover {
+                img:last-of-type {
+                    opacity: 1;
+                }
+
+                div p {
+                    color: $myyellow;
+                }
             }
         }
 
