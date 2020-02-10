@@ -4,6 +4,7 @@
     the_post();
     
 ?>
+
 <div class="offer-container">
     <div class="row justify-content-center p-6">
     <div class="offer-container col-lg-7 col-md-8 p-5">
@@ -14,7 +15,7 @@
                 <?php the_content(); ?>
             </div>
          </a>
-</div>
+    </div>
 </div>
     </div>
   

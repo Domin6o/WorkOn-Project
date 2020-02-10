@@ -31,7 +31,7 @@
 	</a>
 </div>
 
-<div class="container_au col-xl-12 col-lg-12 col-md-10 col-sm-6 offset-sm-0 col-10 offset-1 do-animated do-fadeInRight">
+<div class="container_au col-lg-12 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1 do-animated do-fadeInRight">
 
 <h1 class="d-flex justify-content-center my-5">O nas</h1>
 
@@ -46,7 +46,7 @@
 </div>
 
 <!-- <div class="container_off col-xl-12 col-lg-12 col-md-10 col-sm-10 offset-sm-0 col-10 offset-1 animated fadeInRight"> -->
-<div class="container_off col-xl-12 col-lg-12 col-md-10 col-sm-10 offset-sm-0 col-10 offset-1 do-animated do-fadeInLeft">
+<div class="container_off col-lg-12 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1  do-animated do-fadeInLeft">
 
 <h1 class="d-flex justify-content-center my-5">Oferta</h1>
 
@@ -73,7 +73,7 @@
 
 <!-- Przyciski -->
 <div class="buttons d-flex justify-content-center">
-	<button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
+	<button type="button" id="first" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
 	<button type="button" id="second" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>
 </div>
 

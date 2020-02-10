@@ -41,3 +41,20 @@
         padding: 40px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    
+    .container-fluid {
+        
+        width: 96%;
+        height: 50%;
+
+        #contact_header {
+            width: 95%;
+            text-align: center;
+            font-size: 100px;
+        }
+       
+    }
+
+}

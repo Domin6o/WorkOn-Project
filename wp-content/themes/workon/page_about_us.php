@@ -31,27 +31,28 @@
 <div class="mt-4 team-container d-flex justify-content-center">
 
 
-    <ul class="team_list col-8">
+    <ul class="team_list col-10">
       <div class="team-container">
       
         <?php if ($team_items->have_posts()) : while ($team_items->have_posts()) : $team_items->the_post() ?>
         
           <li>
             <div class="team row mt-5">
-                    <!-- <div class="col-lg-4 mb-3 mb-lg-0"> -->
-                        <div class="team-container col-12 animated slideInLeft">
-                          <a class="team-container__link" href="<?php the_permalink(); ?>">
-                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" id="avatar" class="team-container__img img-fluid img-thumbnail">
-                    <!-- </div> -->
-                    <!-- <div class="col-lg-8"> -->
-                      <h2 class="team-container__title"><?php the_title(); ?></h2>
-                      <?php if( get_field('stanowisko') ): ?>
-                        <h5 class="team-container__field"><?php the_field('stanowisko'); ?></h5>
-                        <?php endif; ?>
-                      <p class="team-container__content"><?php the_content(); ?></p>
-                    </div>
-                </div>
-                </li>
+              <!-- <div class="col-lg-4 mb-3 mb-lg-0"> -->
+              <div class="team-container animated slideInLeft">
+                <a class="team-container__link" href="<?php the_permalink(); ?>">
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" id="avatar" class="team-container__img img-fluid img-thumbnail">
+                  <!-- </div> -->
+                  <!-- <div class="col-lg-8"> -->
+                  <h2 class="team-container__title"><?php the_title(); ?></h2>
+                  <?php if( get_field('stanowisko') ): ?>
+                    <h5 class="team-container__field"><?php the_field('stanowisko'); ?></h5>
+                  <?php endif; ?>
+                  <div class="team-container__content"><?php the_content(); ?></div>
+                </a>
+              </div>
+            </div>
+          </li>
             <?php endwhile; ?>
                 <div class="pt-5 text-center"><p><?php posts_nav_link(); ?></p></div>
             <?php else : ?>

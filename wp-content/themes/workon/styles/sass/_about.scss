@@ -1,11 +1,7 @@
 .team {
 
-
-    display: flex;
-
-
     img {
-        float: left;
+        // float: left;
         width: 165px;
         height: auto;
         margin-top: 10px;
@@ -15,25 +11,38 @@
     }
 
 }
+
 .team_list {
     list-style: none;
-}
+
+    li div { 
+        h2 {
+            font-family: 'Caveat', cursive;
+        }
+
+        // div.team-container__content {
+        //     font-style: 1.2rem;
+        // }
+    }
 
 
-#avatar li:nth-child(odd) img {
-    float: left;
-    margin-right: 30px;
-}
+    li:nth-child(odd) {
+        #avatar  {
+            float: left;
+            margin-right: 30px;
+        }
+    }
+    
+    
+    li:nth-child(even) {
+        text-align: right;
 
-
-#avatar li:nth-child(even) img {
-    clear: both;
-    float: right;
-    margin-left: 30px;
-}
-
-.team_list li div h2 {
-    font-family: 'Caveat', cursive;
+        #avatar  {
+            clear: both;
+            float: right;
+            margin-left: 30px;
+        }
+    }
 }
 
 h1.title_team {
@@ -67,22 +76,38 @@ h1.title_team {
     background-repeat: no-repeat;
 }
 
-    .team-container__link {
-        color: #fff;
-        transition: color .3s ease;
-        display: block;
-        text-align: center;
+.team-container__link {
+    color: #fff;
+    transition: color .3s ease;
+    display: block;
+    // text-align: center;
+    text-decoration: none;
+    &:hover, &:focus, &:active {
         text-decoration: none;
-        animation-delay: 2s;
-        animation-duration: 2s;
-        &:hover, &:focus, &:active {
-            text-decoration: none;
-            color: $myyellow; 
-        }
+        color: $myyellow; 
+    }
+}
+
+.single {
+    text-align: center;
+
+    &.team-container__content {
+        margin-left: 20px;
     }
 
+    &.team-container__img {
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: auto;
+    }
+}
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 620px) {
+    .team-container__content {
+        display: flex;
+        flex-flow: column wrap;
+    }
 
 }
 @media screen and (max-width:768px) {

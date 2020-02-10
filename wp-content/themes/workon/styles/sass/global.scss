@@ -1,5 +1,4 @@
 @import "variables";
-@import "social-media";
 @import "container";
 @import "footer";
 @import "offer";
@@ -8,7 +7,6 @@
 @import "header";
 @import "contact";
 @import "search";
-@import "single-offer";
 @import "404";
 
 
@@ -201,12 +199,25 @@ body {
     }
 }
 
-@media screen and (max-width: 900px){
-    
-        .container_au {
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 90%;
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    body .buttons { 
+      
+        #first, #second {
+           
+            font-size: 16px;
+            text-align: center;
+            margin: auto;
+        
         }
+    }
 }

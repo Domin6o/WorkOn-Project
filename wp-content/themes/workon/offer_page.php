@@ -9,7 +9,7 @@
     get_header();   
 ?>
 
-<div class="container-fluid banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
+<div class="container-fluid banner do-animated do-fadeInDownBig" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
 <h1 id="offer_header"><?php the_title(); ?></h1>
 </div>
 <div class="container justify-content-center">
@@ -31,7 +31,7 @@
 
         <!-- Treść -->
 
-         <a class="offer-container__link animated bounceInUp" href="<?php the_permalink(); ?>">
+         <a class="offer-container__link do-animated do-bounceInUp" href="<?php the_permalink(); ?>">
             <img class=" offer-container__icon" src="<?php echo get_the_post_thumbnail_url(); ?>">
             <h2 class="offer-container__title"><?php the_title(); ?></h2>
             <div class="offer-container__content">

@@ -1,7 +1,7 @@
-<footer class="justify-content-space-between m-3">
-    <div class="media">
-        <ul class="social-media">
-            <li><h5 class="m-2 d-flex justify-content-start">Obserwuj nas:</h5></li>
+<footer class="justify-content-space-between m-3 ">
+    <div class="social-media">
+        <h5 class="follow my-6">Obserwuj nas:</h5>
+        <ul>
             <li><a href="https://www.facebook.com/"><i class="sm fab fa-facebook"></i></a></li>
             <li><a href="https://twitter.com/?lang=pl"><i class="sm fab fa-twitter"></i></a></li>
             <li><a href="https://pl.linkedin.com/"><i class="sm fab fa-linkedin-in"></i></a></li>
