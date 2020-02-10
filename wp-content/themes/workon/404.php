@@ -10,7 +10,7 @@
                 </div>
                 <h2>4</h2>
             </div>
-            <p class="text-center">Page not found</p>
+            <p class="text-center">Nie znaleziono strony</p>
         </div>
     </div>
 </div>

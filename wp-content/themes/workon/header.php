@@ -17,8 +17,8 @@
 <header class="col-lg-12">
     <nav class="nav-menu d-flex justify-content-between">
         <a class="navbar-brand d-flex" href="<?php echo get_site_url(); ?>" rel="home">
-            <img src="<?php echo IMAGES; ?>/logo_green.png" alt="CAT">
             <img src="<?php echo IMAGES; ?>/logo_yellow.png" alt="CAT">
+            <img src="<?php echo IMAGES; ?>/logo_green.png" alt="CAT">
             <div>
                 <p>Creative</p>
                 <p>Arts</p>

@@ -7,7 +7,7 @@
             <?php if (have_posts()) : while (have_posts()) : the_post() ?>
 
                 <div class="row mt-5 container_search">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 do-animated do-slideInUp">
 
                         <a class="search_link" href="<?php the_permalink(); ?>">
 

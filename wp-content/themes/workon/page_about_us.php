@@ -11,22 +11,24 @@
     the_post();
     get_header();
 ?>
-<div class=" about_desc">
-<div class="container-fluid banner animated fadeInDownBig" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
-<h1 id="next"><?php the_title(); ?></h1>
+
+<!-- <div class="about_desc">
+  <div class="container-fluid banner animated fadeInDownBig" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
+    <h1 id="next"><?php the_title(); ?></h1>
+  </div>
+</div> -->
+<div class="container-fluid about_desc do-animated do-fadeInDownBig">
+    <img class="img img-fluid" src="<?php echo IMAGES; ?>/about.png" alt="<?php the_title(); ?>">
+    <h1 id="next"><?php the_title(); ?></h1>
 </div>
-</div>
-<div class=" about_desc container  justify-content-center animated zoomIn">
-<div class="m-2 col-12 text-center">
-  <!-- <h1 id="next"><?php the_title(); ?></h1> -->
-  <?php the_content(); ?>
+<div class="about_desc container justify-content-center do-animated do-jello">
+  <div class="m-2 col-12 text-center">
+    <?php the_content(); ?>
+  </div>
 </div>
 
 
-</div>
-
-
-<h1 class="title_team   d-flex justify-content-center">Nasz zespół</h1>
+<h1 class="title_team d-flex justify-content-center do-animated do-flipInY">Nasz zespół</h1>
 
 <div class="mt-4 team-container d-flex justify-content-center">
 
@@ -39,7 +41,7 @@
           <li>
             <div class="team row mt-5">
               <!-- <div class="col-lg-4 mb-3 mb-lg-0"> -->
-              <div class="team-container animated slideInLeft">
+              <div class="team-container do-animated do-zoomIn">
                 <a class="team-container__link" href="<?php the_permalink(); ?>">
                   <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" id="avatar" class="team-container__img img-fluid img-thumbnail">
                   <!-- </div> -->
@@ -67,7 +69,7 @@
 
 <div class="buttons d-flex justify-content-center">
  
-          <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
+          <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Portfolio</a></button>
 
      
          <button type="button" id="second" class="btn btn-outline-dark m-5">  <a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>

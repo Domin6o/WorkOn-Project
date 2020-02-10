@@ -64,7 +64,7 @@
 <!-- Portfolio -->
 <div class="portfolio-front container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-12 col-lg-11 col-xl-10">
+		<div class="col-12 col-lg-11 col-xl-10  do-animated do-zoomIn">
 			<h2 class="my-4 text-center">Ostatnie realizacje</h2>
 			<?php get_template_part("partials/front", "portfolio"); ?>
 		</div>
@@ -73,7 +73,7 @@
 
 <!-- Przyciski -->
 <div class="buttons d-flex justify-content-center">
-	<button type="button" id="first" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
+	<button type="button" id="first" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=42">Portfolio</a></button>
 	<button type="button" id="second" class="btn btn-outline-dark m-5"><a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>
 </div>
 

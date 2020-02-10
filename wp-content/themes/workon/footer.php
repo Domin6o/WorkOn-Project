@@ -14,7 +14,7 @@
 
     </div>
 
-    <div class="m-3 d-flex justify-content-center">
+    <div class="my-3 d-flex justify-content-center">
         <?php
             wp_nav_menu([
                 "theme_location" => "footer-nav-menu",

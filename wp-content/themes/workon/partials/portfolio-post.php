@@ -1,4 +1,4 @@
-<div class="col-6 col-lg-4 col-xl-3 mb-5">
+<div class="col-6 col-lg-4 col-xl-3 mb-5 do-animated do-bounceInUp">
     <a href="<?php echo get_permalink(); ?>">
         <figure class="figure">
             <figcaption class="figure-caption"><?php the_title(); ?></figcaption>

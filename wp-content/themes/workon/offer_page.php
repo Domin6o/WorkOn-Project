@@ -1,6 +1,6 @@
 <?php
     /* Template Name: Offer */
-  
+
     $offer_items = new WP_Query(array(
         "post_type" => "offer",
         "posts_per_page" => -1,
@@ -8,16 +8,25 @@
     
     get_header();   
 ?>
-
-<div class="container-fluid banner do-animated do-fadeInDownBig" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
-<h1 id="offer_header"><?php the_title(); ?></h1>
+<!-- 
+<div class="container-fluid banner do-animated do-fadeInDownBig">
+    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+    <h1 id="offer_header"><?php the_title(); ?></h1>
+</div> -->
+<div class="container-fluid banner do-animated do-fadeInDownBig">
+    <img class="img img-fluid" src="<?php echo IMAGES; ?>/offer.png" alt="<?php the_title(); ?>">
+    <h1 id="offer_header"><?php the_title(); ?></h1>
 </div>
-<div class="container justify-content-center">
-<div class="m-2 col-12 text-center">
-  <!-- <h1 id="next"><?php the_title(); ?></h1> -->
-</div>
-
-</div>
+<!-- <div class="container justify-content-center">
+    <div class="m-2 col-12 text-center">
+        <h1 id="next"><?php the_title(); ?></h1>
+    </div>
+</div> -->
+<!-- <div class="container justify-content-center">
+    <div class="m-2 col-12 text-center">
+      <h1 id="next"><?php the_title(); ?></h1>
+    </div>
+</div> -->
 
 
 <div class="offer-container container d-flex">
@@ -61,7 +70,7 @@
 <!-- Przyciski -->
 <div class="buttons d-flex justify-content-center">
  
-          <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Zobacz portfolio</a></button>
+          <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Portfolio</a></button>
 
      
          <button type="button" id="second" class="btn btn-outline-dark m-5">  <a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>

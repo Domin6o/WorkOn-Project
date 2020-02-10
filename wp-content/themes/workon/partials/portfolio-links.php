@@ -10,9 +10,9 @@
 ?>
 
 <div class="portfolio-filters">
-    <ul>
+    <ul class=" do-animated do-fadeInLeft">
         <li>
-            <a href="http://localhost/WorkOn_Project/?page_id=42"
+            <a href="<?php echo get_page_link(42); ?>"
             class="<?php if (!$post_taxonomy_id) : echo "active"; endif; ?>">
                 Wszystkie
             </a>
