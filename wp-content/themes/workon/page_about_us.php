@@ -21,7 +21,7 @@
     <img class="img img-fluid" src="<?php echo IMAGES; ?>/about.png" alt="<?php the_title(); ?>">
     <h1 id="next"><?php the_title(); ?></h1>
 </div>
-<div class="about_desc container justify-content-center do-animated do-jello">
+<div class="about_desc col-10 container justify-content-center do-animated do-jello">
   <div class="m-2 col-12 text-center">
     <?php the_content(); ?>
   </div>
@@ -46,11 +46,11 @@
                   <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" id="avatar" class="team-container__img img-fluid img-thumbnail">
                   <!-- </div> -->
                   <!-- <div class="col-lg-8"> -->
-                  <h2 class="team-container__title"><?php the_title(); ?></h2>
+                  <h2 class="team-container__title-name"><?php the_title(); ?></h2>
                   <?php if( get_field('stanowisko') ): ?>
-                    <h5 class="team-container__field"><?php the_field('stanowisko'); ?></h5>
+                    <h5 class="team-container__field-area"><?php the_field('stanowisko'); ?></h5>
                   <?php endif; ?>
-                  <div class="team-container__content"><?php the_content(); ?></div>
+                  <div class="team-container__content-mytext"><?php the_content(); ?></div>
                 </a>
               </div>
             </div>
