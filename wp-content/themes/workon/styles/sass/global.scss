@@ -64,8 +64,9 @@ body {
     }
 
     .carousel-inner {
+        height: auto;
         width: 100%;
-        max-height: 790px;
+        // max-height: 790px;
     }
 
     //Zajawka na stronie głównej-o nas
@@ -74,7 +75,7 @@ body {
         text-align: center;
 
         h1 {
-            font-family: 'Roboto';
+            font-family: 'Montserrat Alternates';
         }
 
         p {
@@ -116,7 +117,7 @@ body {
         text-align: center;
 
         h1 {
-            font-family: 'Roboto';
+            font-family: 'Montserrat Alternates';
         }
 
         p {

@@ -12,13 +12,13 @@
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="<?php echo IMAGES; ?>/slider-1.jpeg" class="d-block w-100" alt="...">
+			<img src="<?php echo IMAGES; ?>/slider-1.jpeg" class="img img-fluid d-block w-100" alt="...">
 		</div>
 		<div class="carousel-item">
-			<img src="<?php echo IMAGES; ?>/slider-2.jpeg" class="d-block w-100" alt="...">
+			<img src="<?php echo IMAGES; ?>/slider-2.jpeg" class="img img-fluid d-block w-100" alt="...">
 		</div>
 		<div class="carousel-item">
-			<img src="<?php echo IMAGES; ?>/slider-3.jpeg" class="d-block w-100" alt="...">
+			<img src="<?php echo IMAGES; ?>/slider-3.jpeg" class=" img img-fluid d-block w-100" alt="...">
 		</div>
 	</div>
 	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
