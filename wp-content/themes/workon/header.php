@@ -19,14 +19,14 @@
         <a class="navbar-brand d-flex" href="<?php echo get_site_url(); ?>" rel="home">
             <img src="<?php echo IMAGES; ?>/logo_yellow.png" alt="CAT">
             <img src="<?php echo IMAGES; ?>/logo_green.png" alt="CAT">
-            <div>
-                <p>Creative</p>
-                <p>Arts</p>
-                <p>Team</p>
+            <div class="d-flex flex-column">
+                <span>Creative</span>
+                <span>Arts</span>
+                <span>Team</span>
             </div>
         </a>
 
-        <div class="links-horizontal d-none d-md-block">
+        <div class="links-horizontal d-none d-sm-flex align-items-center">
             <?php
                 wp_nav_menu([
                     "theme_location" => "header-nav-menu",
@@ -35,7 +35,7 @@
                 ]); 
             ?>
         </div>
-        <div class="links-vertical dropdown d-block d-md-none">
+        <div class="links-vertical dropdown d-block d-sm-none">
             <!-- <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button> -->
@@ -49,7 +49,7 @@
             ?>
         </div>
 
-        <div class="s-container d-none d-lg-flex align-items-center">
+        <div class="s-container d-none d-md-flex align-items-center">
             <form class="d-flex align-items-baseline" id="search" action="<?php echo get_site_url(); ?>">
                 <input type="text" name="s" id="s" class="form-control" placeholder="Wyszukaj">
                 <button type="submit" class="search-btn">Szukaj</button>

@@ -1,6 +1,6 @@
 header {
     position: relative;
-    height: 70px;
+    height: 55px;
     margin: 0;
     padding: 0;
 
@@ -10,11 +10,10 @@ header {
         left: 0;
         min-width: 100%;
         margin: 0;
-        padding: 5px 20px;
+        padding: 5px 15px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.6);
         transition: background-color 400ms;
-        // z-index: 100;
         z-index: 9999;
 
         &:hover{
@@ -23,11 +22,12 @@ header {
         
         a.navbar-brand {
             position: relative;
+            margin: 0;
             padding: 0;
 
             img {
                 width: auto;
-                height: 60px;
+                height: 45px;
 
                 &:last-of-type {
                     position: absolute;
@@ -39,14 +39,14 @@ header {
             }
     
             div {
-                margin-right: auto;
+                margin-left: 5px;
+                line-height: 15px;
+                font-size: 15px;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-weight: 700;
     
-                p {
-                    margin-bottom: 0;
-                    line-height: 20px;
-                    font-size: 20px;
-                    font-family: 'Montserrat Alternates', sans-serif;
-                    font-weight: 700;
+                span {
+                    // margin-bottom: 0;
                     text-align: left;
                     color: $myyellow;
                     transition: color 400ms;
@@ -63,23 +63,32 @@ header {
                     opacity: 1;
                 }
 
-                div p {
+                div span {
                     color: $mygreen;
                 }
             }
         }
 
         div {
-            a {
-                font-family: 'Montserrat Alternates', sans-serif;
-                font-weight: bold;
-                text-decoration: none;
-                color: white;
-                transition: color 400ms;
-
-                &:hover {
-                    color: $myyellow;
+            li {
+                a {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    // font-weight: bold;
                     text-decoration: none;
+                    color: white;
+                    transition: color 400ms;
+    
+                    &:hover {
+                        color: $myyellow;
+                        text-decoration: none;
+                    }
+                }
+
+                &.current-menu-item {
+                    a {
+                        font-weight: bold;
+                        color: $myyellow;
+                    }
                 }
             }
 
@@ -88,10 +97,16 @@ header {
 
                 li {
                     display: inline-block;
-                    padding: 10px 5px;
+                    margin-right: 5px;
+                    padding: 0;
                     
                     a {
-                        font-size: 1.25rem;
+                        padding: 10px 0;
+                        font-size: 1.1rem;
+                    }
+
+                    &:last-of-type {
+                        padding-right: 0;
                     }
                 }
             }
@@ -102,8 +117,8 @@ header {
                     height: inherit;
     
                     i {
-                        font-size: 2rem;
-                        line-height: 60px;
+                        font-size: 1.6rem;
+                        line-height: 45px;
                         color: white;
                         transition: color 400ms;
                     }
@@ -141,9 +156,11 @@ header {
         div.s-container{
             form input {
                 margin:0;
+                padding: 5px;
                 border: 0;
                 border-radius: 0;
                 border-bottom: 1px solid white;
+                font-size: 0.8rem;
                 color: white;
                 background-color: transparent;
                 transition: color 400ms,
@@ -156,11 +173,11 @@ header {
             }
 
             button {
-                margin-left: 10px;
+                margin-left: 5px;
                 border: 2px solid white;
                 border-radius: 5px;
                 padding: 5px;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 font-family: 'Roboto';
                 color: white;
                 background-color: transparent;
@@ -179,11 +196,14 @@ header {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     header {
         nav {
-            div.links-horizontal ul li a {
-                font-size: 1.5rem;
+            div.links-horizontal ul li {
+                margin-right: 15px;
+                a {
+                    font-size: 1.3rem;
+                }
             }
         }
     }
