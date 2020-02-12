@@ -5,7 +5,7 @@
 ?>
 
 <div class="container-fluid banner do-animated do-fadeInDownBig">
-    <img class="img img-fluid" src="<?php echo IMAGES; ?>/contact.png" alt="<?php the_title(); ?>">
+    <img class="img img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
     <h1 id="contact_header"><?php the_title(); ?></h1>
 </div>
 <!-- <div class="container-fluid banner do-animated do-fadeInDownBig" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">

@@ -1,8 +1,6 @@
 <?php   
-  /* Template Name: Offer */
     get_header(); 
     the_post();
-    
 ?>
 
 <div class="offer-container">

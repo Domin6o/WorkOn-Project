@@ -12,13 +12,8 @@
     get_header();
 ?>
 
-<!-- <div class="about_desc">
-  <div class="container-fluid banner animated fadeInDownBig" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
-    <h1 id="next"><?php the_title(); ?></h1>
-  </div>
-</div> -->
 <div class="container-fluid about_desc do-animated do-fadeInDownBig">
-    <img class="img img-fluid" src="<?php echo IMAGES; ?>/about.png" alt="<?php the_title(); ?>">
+    <img class="img img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
     <h1 id="next"><?php the_title(); ?></h1>
 </div>
 <div class="about_desc col-10 container justify-content-center do-animated do-jello">
@@ -27,11 +22,9 @@
   </div>
 </div>
 
-
 <h1 class="title_team d-flex justify-content-center do-animated do-flipInY">Nasz zespół</h1>
 
 <div class="mt-4 team-container d-flex justify-content-center">
-
 
     <ul class="team_list col-10">
       <div class="team-container">
@@ -62,22 +55,13 @@
             <?php endif; ?>
         </div>
     </ul>
-  
-
 
 </div>
 
 <div class="buttons d-flex justify-content-center">
- 
-          <button type="button" id="first" class="btn btn-outline-dark m-5"><a a href="http://localhost/WorkOn_Project/?page_id=42">Portfolio</a></button>
-
-     
-         <button type="button" id="second" class="btn btn-outline-dark m-5">  <a href="http://localhost/WorkOn_Project/?page_id=18">Kontakt</a></button>
-
-
-  </div>
-
-
+	<button type="button" id="first" class="btn btn-outline-dark m-5"><a href="<?php echo get_page_link(42); ?>">Portfolio</a></button>
+	<button type="button" id="second" class="btn btn-outline-dark m-5"><a href="<?php echo get_page_link(18); ?>">Kontakt</a></button>
+</div>
 
 <?php
     get_footer();
