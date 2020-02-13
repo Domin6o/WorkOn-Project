@@ -201,23 +201,17 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 500px) {
     body .buttons { 
       
         #first, #second {
            
-            font-size: 16px;
-            text-align: center;
-            margin: auto;
+            a {
+                font-size: 20px;
+                text-align: center;
+                margin: auto;
+            }
+           
         
         }
     }
