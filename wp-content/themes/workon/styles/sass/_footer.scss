@@ -61,7 +61,6 @@ footer {
     footer .little-nav li a {
         font-size: 40px;
     }
-
 }
 
 
@@ -69,7 +68,6 @@ footer {
     footer .little-nav li a {
         font-size: 30px;
     }
-
 }
 
 
@@ -77,30 +75,29 @@ footer {
     footer .little-nav li a {
         font-size: 25px;
     }
-
 }
 
 
 @media screen and (max-width: 700px) {
-        footer ul.little-nav li a {
-            font-size: 20px;
-        }
-
+    footer ul.little-nav li a {
+        font-size: 20px;
     }
+}
 
 
 
-    @media screen and (max-width: 600px) {
-        footer ul.little-nav li a {
+@media screen and (max-width: 600px) {
+    footer ul.little-nav li {
+        padding: 5px;
+
+        a {
             font-size: 15px;
         }
-
     }
+}
 
-
-@media screen and (max-width: 500px) {
-    footer ul.little-nav li a {
-        // margin: 5px;
-        font-size: 15px;
-    }
-} 
+// @media screen and (max-width: 500px) {
+//     footer ul.little-nav li a {
+//         font-size: 15px;
+//     }
+// } 
