@@ -38,7 +38,7 @@
 		Zapraszamy do zapoznania się z naszym teamem i firmą! Dowiesz się jakie świadczymy usługi i ile lat jesteśmy na rynku. Poznasz naszych specjalistów, którzy świetnie wdrożą Cię w szczegóły naszej oferty a także udzielą Tobie odpowiedzi na wszelkie twoje wątpliwośći i pytania.
 	</p>
 	<button type="button" class="btn_more">
-		<a href="http://localhost/WorkOn_Project/?page_id=9">Czytaj więcej</a>
+		<a href="<?php echo get_page_link(9); ?>">Czytaj więcej</a>
 	</button>
 </div>
 
@@ -50,7 +50,7 @@
 		Jeśli chcesz poznać naszą ofertę oraz dowiedzieć się czy nasza firma świadczy usługi, których potrzebujesz, koniecznie zapoznaj się z podstroną oferta. Znajdziesz tutaj także informacje jak wstapić do naszej ekipy!
 	</p>
 	<button type="button" class="btn_more">
-		<a href="http://localhost/WorkOn_Project/?page_id=64">Czytaj więcej</a>
+		<a href="<?php echo get_page_link(64); ?>">Czytaj więcej</a>
 	</button>
 </div>
 

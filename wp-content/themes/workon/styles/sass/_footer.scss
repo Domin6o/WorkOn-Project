@@ -55,9 +55,6 @@ footer {
             }
         }
     }
-
-
-   
 }
 
 @media screen and (max-width: 1200px) {
@@ -85,9 +82,9 @@ footer {
 
 
 @media screen and (max-width: 700px) {
-    footer ul.little-nav li a {
-        font-size: 20px;
-    }
+        footer ul.little-nav li a {
+            font-size: 20px;
+        }
 
     }
 
@@ -103,7 +100,7 @@ footer {
 
 @media screen and (max-width: 500px) {
     footer ul.little-nav li a {
-        margin: 5px;
+        // margin: 5px;
         font-size: 15px;
     }
 } 

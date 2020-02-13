@@ -1,4 +1,4 @@
-<footer class="justify-content-space-between m-3 ">
+<footer class="justify-content-space-between my-3 ">
     <div class="social-media">
         <h5 class="follow my-6">Obserwuj nas:</h5>
         <ul>
