@@ -1,7 +1,7 @@
 <?php
     get_header();
     the_post();
-    get_template_part("partials\portfolio", "links");
+	include(get_template_directory() . '/partials/portfolio-links.php');
 ?>
 
 <div class="portfolio-post container">
