@@ -12,7 +12,7 @@
     get_header();
 ?>
 
-<div class="container-fluid about_desc do-animated do-fadeInDownBig">
+<div class="about_desc do-animated do-fadeInDownBig">
     <img class="img img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
     <h1 id="next"><?php the_title(); ?></h1>
 </div>
